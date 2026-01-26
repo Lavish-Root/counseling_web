@@ -92,7 +92,7 @@ const Refund = () => {
                                         If you have any questions about our Refund Policy, please contact our support team before making a purchase.
                                     </p>
                                     <p>
-                                        <a href="mailto:support@sartha.in" className="text-purple-600 font-bold hover:underline">support@sartha.in</a>
+                                        <a href="mailto:support@nextstepcounsel.in" className="text-purple-600 font-bold hover:underline">support@nextstepcounsel.in</a>
                                     </p>
                                 </div>
                             </div>

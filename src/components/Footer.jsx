@@ -41,7 +41,7 @@ const Footer = () => {
                         <li><Link to="/counselling" className="hover:text-primary-pink transition">Personalised Counselling</Link></li>
                         <li><Link to="/predictor" className="hover:text-primary-pink transition">College Predictor</Link></li>
                         <li><Link to="/ebooks" className="hover:text-primary-pink transition">Counselling eBooks</Link></li>
-                        <li><Link to="/connector" className="hover:text-primary-pink transition">Sartha Connector</Link></li>
+                        <li><Link to="/connector" className="hover:text-primary-pink transition">NextStep Counsel Connector</Link></li>
                     </ul>
                 </div>
 
