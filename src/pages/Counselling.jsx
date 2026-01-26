@@ -50,7 +50,7 @@ const Counselling = () => {
         <div className="font-sans">
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-gray-900 via-[#1a1025] to-gray-900 text-white py-24 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
                 <div className="absolute top-0 right-0 w-96 h-96 bg-[#E15583] rounded-full blur-[100px] opacity-20 translate-x-1/2 -translate-y-1/2"></div>
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#8361D0] rounded-full blur-[100px] opacity-20 -translate-x-1/2 translate-y-1/2"></div>
 

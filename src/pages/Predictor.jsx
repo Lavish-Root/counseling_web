@@ -8,7 +8,7 @@ const Predictor = () => {
         <div className="font-sans">
             {/* Hero Section */}
             <section className="relative bg-gradient-to-r from-gray-900 via-[#2A1B3D] to-gray-900 text-white py-20 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">
                         Find the Right College <br />
@@ -44,7 +44,7 @@ const Predictor = () => {
                         {/* NEET UG Card */}
                         <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
                             <div className="h-48 bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-6">
-                                <img src="/src/assets/medical-girl.png" alt="NEET UG" className="h-full object-contain drop-shadow-md" />
+                                <img src="/assets/medical-girl.png" alt="NEET UG" className="h-full object-contain drop-shadow-md" />
                             </div>
                             <div className="p-8">
                                 <div className="flex justify-between items-start mb-4">
@@ -79,7 +79,7 @@ const Predictor = () => {
                         {/* NEET PG Card */}
                         <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
                             <div className="h-48 bg-gradient-to-br from-pink-50 to-rose-50 flex items-center justify-center p-6">
-                                <img src="/src/assets/predictor-tool.png" alt="NEET PG" className="h-full object-contain drop-shadow-md" />
+                                <img src="/assets/predictor-tool.png" alt="NEET PG" className="h-full object-contain drop-shadow-md" />
                             </div>
                             <div className="p-8">
                                 <div className="flex justify-between items-start mb-4">
@@ -166,7 +166,7 @@ const Predictor = () => {
                         <div className="hidden md:flex justify-center">
                             {/* Abstract Visual or Illustration */}
                             <div className="relative w-80 h-96 bg-gradient-to-tr from-[#E15583] to-[#8361D0] rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                            <img src="/src/assets/connector-illo.png" alt="Analytics" className="relative z-10 w-full max-w-md drop-shadow-2xl hover:scale-105 transition duration-500" />
+                            <img src="/assets/connector-illo.png" alt="Analytics" className="relative z-10 w-full max-w-md drop-shadow-2xl hover:scale-105 transition duration-500" />
                         </div>
                     </div>
                 </div>

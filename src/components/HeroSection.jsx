@@ -9,7 +9,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-200 rounded-full blur-[100px] opacity-30 animate-pulse"></div>
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-pink-200 rounded-full blur-[100px] opacity-30 animate-pulse delay-700"></div>
-                <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'url(/src/assets/bg-pattern.webp)', backgroundSize: '400px' }}></div>
+                <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'url(/assets/bg-pattern.webp)', backgroundSize: '400px' }}></div>
             </div>
 
             <div className="container mx-auto px-4 text-center relative z-10">
@@ -21,7 +21,7 @@ const HeroSection = () => {
                 >
                     <div className="relative mb-8">
                         <div className="absolute inset-0 bg-gradient-to-t from-purple-200 to-transparent rounded-full blur-xl opacity-50"></div>
-                        <img src="/src/assets/medical-girl.png" alt="Medical Student" className="relative w-40 md:w-56 drop-shadow-2xl hover:scale-105 transition duration-500" />
+                        <img src="/assets/medical-girl.png" alt="Medical Student" className="relative w-40 md:w-56 drop-shadow-2xl hover:scale-105 transition duration-500" />
 
                         {/* Floating Badges */}
                         <motion.div

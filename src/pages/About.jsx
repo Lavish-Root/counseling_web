@@ -6,7 +6,7 @@ const About = () => {
         <div className="font-sans text-gray-800">
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-[#1a1025] to-[#2d1b42] text-white py-24 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
                     <h1 className="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
                         Your Dreams, <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E15583] to-[#8361D0]">Our Mission</span>

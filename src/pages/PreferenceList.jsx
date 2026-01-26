@@ -44,7 +44,7 @@ const PreferenceList = () => {
         <div className="pt-24 pb-16 min-h-screen bg-gray-50 font-sans">
             {/* Hero Section */}
             <div className="relative bg-gradient-to-r from-purple-900 to-indigo-900 text-white py-20 mb-12 -mt-24">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
 
                 <div className="container mx-auto px-4 relative z-10 text-center pt-24">
                     <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Choice Preference Generator</h1>

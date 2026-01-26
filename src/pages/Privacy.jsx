@@ -6,7 +6,7 @@ const Privacy = () => {
         <div className="font-sans min-h-screen bg-gray-50">
             {/* Header Section */}
             <div className="relative bg-gradient-to-r from-teal-900 to-emerald-900 text-white py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
                 <div className="absolute top-0 left-0 w-96 h-96 bg-teal-500 rounded-full blur-[100px] opacity-20 -translate-x-1/2 -translate-y-1/2"></div>
 
                 <div className="container mx-auto px-4 relative z-10 text-center">

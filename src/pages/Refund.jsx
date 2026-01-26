@@ -6,7 +6,7 @@ const Refund = () => {
         <div className="font-sans min-h-screen bg-gray-50">
             {/* Header Section */}
             <div className="relative bg-gradient-to-r from-emerald-900 to-green-900 text-white py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-500 rounded-full blur-[100px] opacity-20 translate-y-1/2 translate-x-1/2"></div>
 
                 <div className="container mx-auto px-4 relative z-10 text-center">

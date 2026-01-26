@@ -63,7 +63,7 @@ const Blogs = () => {
         <div className="font-sans min-h-screen bg-gray-50">
             {/* Hero Section */}
             <section className="relative bg-gradient-to-r from-[#1a1025] to-[#2d1b42] text-white py-20 lg:py-28">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">News, Blogs & Articles</h1>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">

@@ -27,7 +27,7 @@ const ConnectorSection = () => {
                     <div className="md:w-1/2 relative">
                         <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300 rounded-full blur-2xl opacity-40 animate-pulse"></div>
                         <div className="absolute bottom-10 right-10 w-32 h-32 bg-purple-300 rounded-full blur-3xl opacity-40"></div>
-                        <img src="/src/assets/connector-illo.png" alt="Sartha Connector" className="w-full max-w-lg mx-auto drop-shadow-2xl relative z-10" />
+                        <img src="/assets/connector-illo.png" alt="Sartha Connector" className="w-full max-w-lg mx-auto drop-shadow-2xl relative z-10" />
 
                         {/* Floating Cards (Simulated) */}
                         <div className="absolute top-1/2 -right-4 -translate-y-1/2 bg-white p-4 rounded-xl shadow-lg animate-bounce hidden md:block">

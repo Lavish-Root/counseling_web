@@ -44,7 +44,7 @@ const PredictorSection = () => {
                 <div className="md:w-1/2 flex justify-center relative">
                     <div className="absolute inset-0 bg-gradient-to-tl from-purple-200 to-indigo-200 rounded-full blur-3xl opacity-30"></div>
                     {/* Illustration */}
-                    <img src="/src/assets/predictor-tool.png" alt="College Predictor" className="w-full max-w-lg relative z-10 drop-shadow-2xl hover:scale-[1.02] transition duration-700" />
+                    <img src="/assets/predictor-tool.png" alt="College Predictor" className="w-full max-w-lg relative z-10 drop-shadow-2xl hover:scale-[1.02] transition duration-700" />
                 </div>
             </div>
         </section>

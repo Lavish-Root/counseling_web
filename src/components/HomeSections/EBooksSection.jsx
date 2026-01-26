@@ -32,7 +32,7 @@ const EBooksSection = () => {
                 </div>
                 <div className="md:w-1/2 flex justify-center relative group">
                     <div className="absolute inset-0 bg-orange-200 rounded-full blur-[100px] opacity-30 group-hover:opacity-50 transition duration-700"></div>
-                    <img src="/src/assets/ebook-cover.png" alt="Counselling eBooks" className="w-full max-w-lg relative z-10 drop-shadow-2xl transform group-hover:rotate-3 group-hover:scale-105 transition duration-500" />
+                    <img src="/assets/ebook-cover.png" alt="Counselling eBooks" className="w-full max-w-lg relative z-10 drop-shadow-2xl transform group-hover:rotate-3 group-hover:scale-105 transition duration-500" />
                 </div>
             </div>
         </section>

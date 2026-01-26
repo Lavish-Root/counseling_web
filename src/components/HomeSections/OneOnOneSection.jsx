@@ -46,7 +46,7 @@ const OneOnOneSection = () => {
                 <div className="md:w-1/2 flex justify-center relative">
                     <div className="absolute inset-0 bg-gradient-to-tr from-pink-200 to-purple-200 rounded-full blur-3xl opacity-30 transform rotate-12"></div>
                     <img
-                        src="/src/assets/counselling-support.png"
+                        src="/assets/counselling-support.png"
                         alt="Personalised Counselling"
                         className="w-full max-w-lg relative z-10 drop-shadow-2xl hover:scale-[1.02] transition duration-700"
                     />

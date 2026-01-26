@@ -100,7 +100,7 @@ const MBBSCounselling = () => {
         <div className="font-sans">
             {/* Hero Section */}
             <section className="relative bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 lg:py-28">
-                <div className="absolute inset-0 bg-[url('/src/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">MBBS Counselling Guidance</h1>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
