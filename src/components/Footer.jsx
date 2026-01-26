@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
 
             {/* Floating WhatsApp Button */}
-            <a href="https://wa.me/91701264008" target="_blank" rel="noreferrer" className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition z-50">
+            <a href="https://wa.me/917014264008" target="_blank" rel="noreferrer" className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition z-50">
                 <FaWhatsapp size={24} />
             </a>
         </footer>
