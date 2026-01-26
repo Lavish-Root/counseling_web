@@ -209,11 +209,11 @@ const MBBSCounselling = () => {
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-2xl font-bold mb-8">Need help choosing a plan?</h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <a href="https://wa.me/7203086849" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition">
+                        <a href="https://wa.me/91701264008" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition">
                             <FaWhatsapp size={20} /> Chat on WhatsApp
                         </a>
-                        <a href="tel:7203086849" className="flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-bold transition">
-                            <FaPhoneAlt size={18} /> Call +91 72030 86849
+                        <a href="tel:701264008" className="flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-bold transition">
+                            <FaPhoneAlt size={18} /> Call +91 701264008
                         </a>
                     </div>
                 </div>
