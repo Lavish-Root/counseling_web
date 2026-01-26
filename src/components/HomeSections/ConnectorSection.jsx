@@ -16,7 +16,7 @@ const ConnectorSection = () => {
                     Community
                 </div>
                 <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 leading-tight">
-                    Sartha <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8361D0] to-[#E15583]">Connector</span>
+                    NextStep Counsel <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8361D0] to-[#E15583]">Connector</span>
                 </h2>
                 <p className="text-gray-600 mb-16 text-lg max-w-2xl mx-auto leading-relaxed">
                     Connect directly with current medical students from your dream colleges. Get unfiltered reviews about academics, hostels, and campus life.
@@ -27,7 +27,7 @@ const ConnectorSection = () => {
                     <div className="md:w-1/2 relative">
                         <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300 rounded-full blur-2xl opacity-40 animate-pulse"></div>
                         <div className="absolute bottom-10 right-10 w-32 h-32 bg-purple-300 rounded-full blur-3xl opacity-40"></div>
-                        <img src="/assets/connector-illo.png" alt="Sartha Connector" className="w-full max-w-lg mx-auto drop-shadow-2xl relative z-10" />
+                        <img src="/assets/connector-illo.png" alt="NextStep Counsel Connector" className="w-full max-w-lg mx-auto drop-shadow-2xl relative z-10" />
 
                         {/* Floating Cards (Simulated) */}
                         <div className="absolute top-1/2 -right-4 -translate-y-1/2 bg-white p-4 rounded-xl shadow-lg animate-bounce hidden md:block">

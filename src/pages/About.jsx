@@ -12,7 +12,7 @@ const About = () => {
                         Your Dreams, <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E15583] to-[#8361D0]">Our Mission</span>
                     </h1>
                     <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                        Making your admission journey smooth, informed, and stress-free. Sartha was created with a single purpose: to ensure you have the clarity and confidence to achieve your dreams.
+                        Making your admission journey smooth, informed, and stress-free. NextStep Counsel was created with a single purpose: to ensure you have the clarity and confidence to achieve your dreams.
                     </p>
                 </div>
             </section>
@@ -66,11 +66,11 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Why Choose Sartha? */}
+            {/* Why Choose NextStep Counsel? */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold text-gray-900">Why Choose Sartha?</h2>
+                        <h2 className="text-3xl font-bold text-gray-900">Why Choose NextStep Counsel?</h2>
                         <div className="w-20 h-1 bg-gradient-to-r from-[#E15583] to-[#8361D0] mx-auto mt-4 rounded-full"></div>
                     </div>
 
@@ -91,7 +91,7 @@ const About = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold mb-2">Real Advice from Real Students</h3>
-                                    <p className="text-gray-600">Directly connect with current college students via Sartha Connector for unfiltered insights.</p>
+                                    <p className="text-gray-600">Directly connect with current college students via NextStep Counsel Connector for unfiltered insights.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4">
@@ -159,7 +159,7 @@ const About = () => {
                                 <p className="text-blue-600 font-medium mb-4">Founder & CEO</p>
                                 <p className="text-gray-500 text-sm mb-6">MBBS | NAMO MERI (GMC), Silvassa</p>
                                 <p className="text-gray-600 italic leading-relaxed">
-                                    "During my own counseling journey, I saw how confusing and stressful the process can be. That experience made me realize the need for a platform like Sartha."
+                                    "During my own counseling journey, I saw how confusing and stressful the process can be. That experience made me realize the need for a platform like NextStep Counsel."
                                 </p>
                             </div>
                         </div>

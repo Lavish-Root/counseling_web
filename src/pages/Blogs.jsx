@@ -17,7 +17,7 @@ const Blogs = () => {
             title: "Government vs Private Medical Colleges: Making the Choice",
             excerpt: "Struggling to decide? We break down the fee structures, patient load, faculty quality, and internship opportunities to help you make an informed decision.",
             date: "Jan 10, 2025",
-            author: "Team Sartha",
+            author: "Team NextStep Counsel",
             category: "Counselling Guide",
             image: "https://placehold.co/600x400/8361D0/ffffff?text=Govt+vs+Pvt"
         },
@@ -44,7 +44,7 @@ const Blogs = () => {
             title: "Top 10 Medical Colleges in India (NIRF Rankings)",
             excerpt: "A deep dive into the best medical institutes in India based on infrastructure, research, and placement records.",
             date: "Dec 20, 2024",
-            author: "Team Sartha",
+            author: "Team NextStep Counsel",
             category: "College Reviews",
             image: "https://placehold.co/600x400/60a5fa/ffffff?text=Top+10+Colleges"
         },

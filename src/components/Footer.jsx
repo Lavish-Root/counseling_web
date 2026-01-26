@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8 mb-12">
                 {/* Brand & About */}
                 <div>
-                    <Link to="/" className="text-3xl font-bold mb-4 block">Sartha</Link>
+                    <Link to="/" className="text-3xl font-bold mb-4 block">NextStep Counsel</Link>
                     <p className="text-gray-400 text-sm mb-6">
                         The Ultimate College Guidance and Counselling Platform for NEET & CUET. We are with you, till the end!
                     </p>
@@ -49,24 +49,16 @@ const Footer = () => {
                 <div>
                     <h4 className="font-bold text-lg mb-6">Get In Touch</h4>
                     <ul className="space-y-4 text-sm text-gray-400">
-                        <li className="flex items-start gap-3">
-                            <FaMapMarkerAlt className="mt-1 flex-shrink-0 text-primary-pink" />
-                            <span>E-345, Sumel business park 6, Dudheshwar, Ahmedabad, Gujarat 380004</span>
-                        </li>
                         <li className="flex items-center gap-3">
                             <FaEnvelope className="text-primary-pink" />
-                            <a href="mailto:support@sartha.in">support@sartha.in</a>
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <FaPhone className="text-primary-pink" />
-                            <a href="tel:+917203086849">+91 72030 86849</a>
+                            <a href="mailto:support@nextstepcounsel.in">support@nextstepcounsel.in</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                <p>&copy; {new Date().getFullYear()} Sartha Education. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} NextStep Counsel. All rights reserved.</p>
             </div>
 
             {/* Floating WhatsApp Button */}

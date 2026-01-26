@@ -49,7 +49,7 @@ const ForgotPassword = () => {
                     <Link to="/">
                         <img
                             src="/assets/sartha-logo-square.png"
-                            alt="Sartha"
+                            alt="NextStep Counsel"
                             className="h-16 object-contain mb-2"
                         />
                     </Link>

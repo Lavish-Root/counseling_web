@@ -140,12 +140,12 @@ const Predictor = () => {
                 </div>
             </section>
 
-            {/* Why Sartha Section */}
+            {/* Why NextStep Counsel Section */}
             <section className="py-20 bg-gray-900 text-white">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why SARTHA Predictor?</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why NextStep Counsel Predictor?</h2>
                             <div className="space-y-6">
                                 {[
                                     "Trusted by thousands of users",
@@ -186,7 +186,7 @@ const Predictor = () => {
                                 <FaUserGraduate />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Become an Ambassador</h3>
-                            <p className="text-gray-500 text-sm mb-6">If you believe in Sartha, like we do, become an ambassador.</p>
+                            <p className="text-gray-500 text-sm mb-6">If you believe in NextStep Counsel, like we do, become an ambassador.</p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyy3zSINgEooWoRaitinzHNFXEnPD0ZTA7vqMHX4BNEGRNZA/viewform" target="_blank" rel="noreferrer" className="text-blue-600 font-semibold hover:underline">Fill Form &rarr;</a>
                         </div>
 

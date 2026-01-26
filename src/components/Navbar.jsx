@@ -31,7 +31,7 @@ const Navbar = () => {
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     {/* Logo */}
                     <Link to="/" className="flex flex-col z-50 relative">
-                        <img src="/assets/sartha-logo-square.png" alt="Sartha" className="h-10 md:h-12 object-contain" />
+                        <img src="/assets/sartha-logo-square.png" alt="NextStep Counsel" className="h-10 md:h-12 object-contain" />
                     </Link>
 
                     {/* Desktop Menu */}

@@ -23,7 +23,7 @@ const Home = () => {
             {/* CTA Section */}
             <div className="bg-gradient-primary py-16 text-center text-white">
                 <h2 className="text-3xl font-bold mb-4">Ready to start your journey?</h2>
-                <p className="mb-8 opacity-90">Join thousands of students who trust Sartha.</p>
+                <p className="mb-8 opacity-90">Join thousands of students who trust NextStep Counsel.</p>
                 <button className="bg-white text-primary-purple px-8 py-3 rounded-full font-bold hover:shadow-lg hover:scale-105 transition">
                     Get Started Now
                 </button>

@@ -91,7 +91,7 @@ const Connector = () => {
         },
         {
             question: "Are these real students?",
-            answer: "Yes, all seniors listed on Sartha Connector are verified students of their respective colleges."
+            answer: "Yes, all seniors listed on NextStep Counsel Connector are verified students of their respective colleges."
         },
         {
             question: "How does the connection work?",
@@ -110,7 +110,7 @@ const Connector = () => {
             <section className="relative bg-gradient-to-br from-[#1a1025] to-[#2d1b42] text-white py-20 lg:py-24">
                 <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6">Sartha Connector</h1>
+                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6">NextStep Counsel Connector</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
                         Connect directly with current medical students for real, honest, and unfiltered college reviews.
                     </p>

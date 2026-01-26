@@ -15,7 +15,7 @@ const Terms = () => {
                     </div>
                     <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Terms & Conditions</h1>
                     <p className="text-lg text-blue-200 max-w-2xl mx-auto">
-                        Please read these terms carefully before using our services. By using Sartha, you agree to be bound by these conditions.
+                        Please read these terms carefully before using our services. By using NextStep Counsel, you agree to be bound by these conditions.
                     </p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const Terms = () => {
                                 <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Acceptance of Terms</h2>
                                 <div className="text-gray-600 leading-relaxed space-y-4">
                                     <p>
-                                        By accessing and using <strong>Sartha.in</strong> ("we", "us", or "our"), you accept and agree to be bound by the terms and provisions of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services.
+                                        By accessing and using <strong>NextStep Counsel.in</strong> ("we", "us", or "our"), you accept and agree to be bound by the terms and provisions of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services.
                                     </p>
                                     <p>
                                         ANY PARTICIPATION IN THIS SERVICE WILL CONSTITUTE ACCEPTANCE OF THIS AGREEMENT. IF YOU DO NOT AGREE TO ABIDE BY THE ABOVE, PLEASE DO NOT USE THIS SERVICE.
@@ -88,7 +88,7 @@ const Terms = () => {
                                 <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-pink-600 transition-colors">Intellectual Property</h2>
                                 <div className="text-gray-600 leading-relaxed space-y-4">
                                     <p>
-                                        All content on this website, including text, graphics, logos, images, and software, is the property of Sartha Education and is protected by copyright laws.
+                                        All content on this website, including text, graphics, logos, images, and software, is the property of NextStep Counsel Education and is protected by copyright laws.
                                     </p>
                                     <p>
                                         You may not reproduce, duplicate, copy, sell, resell or exploit any portion of the service, use of the service, or access to the service without express written permission by us.

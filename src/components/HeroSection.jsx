@@ -46,7 +46,7 @@ const HeroSection = () => {
 
                     <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-gray-900 leading-tight tracking-tight">
                         Get trusted guidance with <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E15583] via-[#8361D0] to-[#E15583] animate-gradient-x">Sartha</span> <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E15583] via-[#8361D0] to-[#E15583] animate-gradient-x">NextStep Counsel</span> <br />
                         for every step.
                     </h1>
                 </motion.div>

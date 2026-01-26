@@ -24,7 +24,7 @@ const Login = () => {
 
         window.open(
             '/mock-login',
-            'Sartha Google Login',
+            'NextStep Counsel Google Login',
             `width=${width},height=${height},top=${top},left=${left}`
         );
     };
@@ -51,7 +51,7 @@ const Login = () => {
                     <Link to="/">
                         <img
                             src="/assets/sartha-logo-square.png"
-                            alt="Sartha"
+                            alt="NextStep Counsel"
                             className="h-12 object-contain mb-8"
                         />
                     </Link>

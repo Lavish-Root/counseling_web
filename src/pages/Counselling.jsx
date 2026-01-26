@@ -123,7 +123,7 @@ const Counselling = () => {
                                 <FaUserGraduate />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Become an Ambassador</h3>
-                            <p className="text-gray-500 text-sm mb-6">If you believe in Sartha, like we do, become an ambassador.</p>
+                            <p className="text-gray-500 text-sm mb-6">If you believe in NextStep Counsel, like we do, become an ambassador.</p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyy3zSINgEooWoRaitinzHNFXEnPD0ZTA7vqMHX4BNEGRNZA/viewform" target="_blank" rel="noreferrer" className="text-blue-600 font-semibold hover:underline">Fill Form &rarr;</a>
                         </div>
 
