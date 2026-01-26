@@ -61,7 +61,7 @@ const Register = () => {
                 <div className="flex flex-col items-center">
                     <Link to="/">
                         <img
-                            src="/src/assets/sartha-logo-wide.webp"
+                            src="/src/assets/sartha-logo-square.png"
                             alt="Sartha"
                             className="h-16 object-contain mb-2"
                         />
