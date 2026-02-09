@@ -45,14 +45,14 @@ const HeroSection = () => {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-gray-900 leading-tight tracking-tight">
-                        Get trusted guidance with <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E15583] via-[#8361D0] to-[#E15583] animate-gradient-x">NextStep Counsel</span> <br />
-                        for every step.
+                        NextStep Counsel, your <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E15583] via-[#8361D0] to-[#E15583] animate-gradient-x">one-stop solution</span> <br />
+                        for:
                     </h1>
                 </motion.div>
 
-                <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
-                    The Ultimate College Guidance and Counselling Platform for <span className="text-gray-900 font-bold">NEET</span> & <span className="text-gray-900 font-bold">CUET</span>
+                <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-4xl mx-auto font-medium leading-relaxed">
+                    <span className="text-gray-900 font-bold">NEET UG Counselling Guidance</span> • <span className="text-gray-900 font-bold">Medical Admission Support</span> • <span className="text-gray-900 font-bold">Competitive Exam Career Counselling</span> • <span className="text-gray-900 font-bold">Latest Education Updates</span>
                 </p>
 
                 {/* Features - Always Visible Now */}

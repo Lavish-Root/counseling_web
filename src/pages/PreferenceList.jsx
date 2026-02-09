@@ -36,7 +36,7 @@ const PreferenceList = () => {
 
     const handleDownloadSample = () => {
         // Using the actual sample link from the reference site if available, or a reliable placeholder
-        const sampleUrl = "https://sartha.in/pdf/PreferenceList.pdf";
+        const sampleUrl = "#"; // Placeholder
         window.open(sampleUrl, '_blank');
     };
 
@@ -47,7 +47,7 @@ const PreferenceList = () => {
                 <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-10 mix-blend-overlay"></div>
 
                 <div className="container mx-auto px-4 relative z-10 text-center pt-24">
-                    <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Choice Preference Generator</h1>
+                    <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">NEET Preference List</h1>
                     <p className="text-lg text-purple-200 max-w-3xl mx-auto">
                         Create your personalized, scientifically optimized preference list in seconds. maximize your chances of securing a seat.
                     </p>

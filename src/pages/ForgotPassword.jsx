@@ -47,11 +47,12 @@ const ForgotPassword = () => {
             <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
                 <div className="flex flex-col items-center">
                     <Link to="/">
-                        <img
+                        {/* <img
                             src="/assets/sartha-logo-square.png"
                             alt="NextStep Counsel"
                             className="h-16 object-contain mb-2"
-                        />
+                        /> */}
+                        <span className="text-3xl font-bold text-gray-900 mb-2 block">NextStep Counsel</span>
                     </Link>
                     <h2 className="text-2xl font-bold text-gray-900">
                         {step === 1 && "Forgot Password"}

@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Blog', path: '/blogs' },
-        { name: 'Predictor', path: '/predictor' },
+        { name: 'Courses', path: '/courses' },
         { name: 'Preference List', path: '/neet-pg-preference-list' },
         { name: 'Counselling', path: '/counselling' },
         { name: 'eBooks', path: '/ebooks' },
@@ -23,7 +23,8 @@ const Navbar = () => {
     // Close menu when route changes
     React.useEffect(() => {
         setIsMobileMenuOpen(false);
-    }, [location]);
+    }, [location]); 
+    
 
     return (
         <>
@@ -31,7 +32,7 @@ const Navbar = () => {
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     {/* Logo */}
                     <Link to="/" className="flex flex-col z-50 relative">
-                        <img src="/assets/sartha-logo-square.png" alt="NextStep Counsel" className="h-10 md:h-12 object-contain" />
+                        <span className="text-2xl font-bold text-gray-900">NextStep Counsel</span>
                     </Link>
 
                     {/* Desktop Menu */}

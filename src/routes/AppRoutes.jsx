@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Counselling from '../pages/Counselling';
-import Predictor from '../pages/Predictor';
+import Courses from '../pages/Courses';
 import Connector from '../pages/Connector';
 import EBooks from '../pages/EBooks';
 import Terms from '../pages/Terms';
@@ -45,7 +45,7 @@ const AppRoutes = () => {
             <Route path="/ebooks" element={<EBooks />} />
             <Route path="/counselling/:type" element={<Counselling />} /> {/* Placeholder for other sub-routes */}
             <Route path="/cart" element={<Cart />} />
-            <Route path="/predictor" element={<Predictor />} />
+            <Route path="/courses" element={<Courses />} />
             <Route path="/connector" element={<Connector />} />
             <Route path="/predictor-neet-ug" element={<PredictorNEETUG />} />
 

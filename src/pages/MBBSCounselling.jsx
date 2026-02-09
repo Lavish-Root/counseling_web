@@ -12,56 +12,21 @@ const MBBSCounselling = () => {
 
     const plans = [
         {
-            title: "🏥 GOVT FOCUS PLAN (PRIME)",
-            subtitle: "For students targeting only AIIMS, JIPMER & Government MBBS Colleges",
-            price: "11999",
+            title: "💎 PREMIUM PAID COUNSELLING",
+            subtitle: "Guaranteed Expert Support for NEET Admission",
+            price: "19999", // Adjusted placeholder price or remove price if not specified
             features: [
-                "Dedicated Personal Counselor till final admission",
-                "Personalized Govt-only Preference List (AIIMS, GMCs, State quota)",
-                "Verified Cutoff Data (Category + Round-wise)",
-                "Complete support for MCC + 1 State Counseling",
-                "Seat Matrix, Bond, Fees & Stipend info",
-                "Scholarship Guidance – Central + State schemes",
-                "Access to NextStep Counsel College Predictor Tool",
-                "State-specific Bond/Migration rules explained",
-                "Support for EWS, OBC, SC/ST Certificate Documents",
-                "Round-wise Strategy: 1st, 2nd, Mop-up, Stray",
-                "Regular updates on Circulars & Notifications",
-                "College Reviews: OPD strength, PG seats, hostel, internships",
-                "Access to Govt College Counseling eBook (PDF)",
-                "WhatsApp Support + Call Sessions with Counselor",
-                "(Form Filling + Choice Filling) Video Explanation Support",
-                "Refund & Exit Policy Guidance",
-                "Special Users WhatsApp Group"
+                "1-to-1 Personal Mentor",
+                "Best College Selection Guidance",
+                "Round-wise Seat Planning",
+                "Choice Filling Done with Expert Support",
+                "Dedicated WhatsApp Help",
+                "Full Admission Process Assistance",
+                "Document Verification Help",
+                "Spot Round & Mop-Up Guidance"
             ],
-            note: "Ideal for students/parents who want full support in every step for Govt colleges only.",
-            color: "blue"
-        },
-        {
-            title: "🏥 ALL-IN-ONE PREMIUM PLAN",
-            subtitle: "Complete counseling support for Govt + Private + Deemed + Management MBBS Colleges",
-            price: "19999",
-            features: [
-                "Dedicated Personal Counselor till final admission",
-                "Personalized College Preference List (Govt + Pvt + Deemed)",
-                "Verified Cutoff Data – MCC + All States + Deemed (Round-wise)",
-                "Full support for All India (AIQ), State Quotas & Deemed Universities",
-                "Access to NextStep Counsel College Predictor Tool",
-                "Round-wise Counseling Strategy for each type",
-                "Detailed Seat Matrix, Hostel, Stipend & Fee Structures",
-                "Guidance for Bond Rules, Rural Service, Domicile Conditions",
-                "Help with Documents – Category, Domicile, Gap, Migration, NRI docs",
-                "Form Filling + Choice Filling Video Explanation Support",
-                "Direct assistance in Scholarship + Education Loan Application",
-                "Refund & Exit Policy Guidance (Govt, Pvt & Deemed)",
-                "Access to NextStep Counsel’s Master Counseling eBook",
-                "Full database of College Reviews – patient load, ROI etc.",
-                "Special Premium WhatsApp Group Access",
-                "Regular updates on Notifications, Deadlines & Circulars",
-                "Post-Admission Checklist: Reporting, Hostel, Reg, Doc Check"
-            ],
-            note: "Choose this if you are considering Private/Deemed options along with Government.",
-            color: "purple" // Using purple/pink gradient
+            note: "Best Option for Serious Medical Aspirants.",
+            color: "purple"
         }
     ];
 
@@ -70,21 +35,10 @@ const MBBSCounselling = () => {
             question: "What is MBBS counselling?",
             answer: "MBBS counselling is the official procedure for gaining admission to medical colleges after the NEET exam. Based on your NEET score or rank, you are assigned a college through either the All India Quota (AIQ) or State Quota counselling."
         },
+        // ... (Keep existing FAQs or update if needed)
         {
             question: "Who conducts MBBS counselling in India?",
             answer: "The Medical Counselling Committee (MCC) conducts the All India Quota (AIQ) for 15% of government seats and 100% of seats in deemed/central universities. State counselling authorities conduct counselling for the remaining 85% state quota seats."
-        },
-        {
-            question: "What is the NRI Quota in MBBS?",
-            answer: "The NRI Quota allows Indian-origin students living abroad to apply for reserved seats in specific medical colleges. It typically requires higher fees and specific documentation proof of NRI status."
-        },
-        {
-            question: "What is the Mop-Up Round?",
-            answer: "The Mop-Up Round is a special round conducted to fill vacant seats after Round 1 and Round 2 of counselling. It acts as a second chance for students who haven't secured a seat in the initial rounds."
-        },
-        {
-            question: "What is the Stray Round?",
-            answer: "The Stray Round is the final chance to get any remaining MBBS seats in private or deemed colleges, usually conducted at the institute level to fill any last-minute vacancies."
         },
         {
             question: "What documents are typically required?",
@@ -102,10 +56,58 @@ const MBBSCounselling = () => {
             <section className="relative bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 lg:py-28">
                 <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">MBBS Counselling Guidance</h1>
-                    <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                        Expert guidance for AIQ & State Quota MBBS admissions. Get personalized support throughout your medical counselling journey.
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">NEET UG Counselling Guidance 2026</h1>
+                    <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                        NEET Counselling is the most important step after NEET results. Many students lose seats due to wrong decisions. We provide complete support.
                     </p>
+                    <div className="flex flex-wrap justify-center gap-4 text-sm font-medium text-blue-200">
+                        <span className="bg-blue-900/50 px-3 py-1 rounded-full border border-blue-700">MCC All India Quota</span>
+                        <span className="bg-blue-900/50 px-3 py-1 rounded-full border border-blue-700">State Counselling</span>
+                        <span className="bg-blue-900/50 px-3 py-1 rounded-full border border-blue-700">College Prediction</span>
+                    </div>
+                </div>
+            </section>
+
+            {/* Intro/Services Section */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Complete NEET UG Counselling Support</h2>
+                            <p className="text-gray-600 mb-6 leading-relaxed">
+                                At NextStep Counsel, our mission is to empower students with accurate information, expert mentorship, and transparent counselling so they can secure the best opportunities.
+                            </p>
+                            <ul className="space-y-3">
+                                {[
+                                    "MCC All India Quota Counselling",
+                                    "State Counselling Guidance",
+                                    "Round-wise Strategy Planning",
+                                    "Choice Filling Assistance",
+                                    "Document Verification Help",
+                                    "Admission Confirmation Support"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-3 text-gray-700 font-medium">
+                                        <FaCheckCircle className="text-green-500 flex-shrink-0" /> {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                            <h3 className="text-xl font-bold mb-4 text-blue-800">Why Choice Filling Matters?</h3>
+                            <p className="text-gray-600 mb-4">
+                                Many students lose seats due to wrong decisions in Choice Filling, College Selection, and Refund Rules.
+                            </p>
+                            <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
+                                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-xl">
+                                    <FaWhatsapp />
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase font-bold">Get Guidance Now</p>
+                                    <p className="font-bold text-lg text-gray-900">95889 28940</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -113,11 +115,12 @@ const MBBSCounselling = () => {
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900">Choose Your Plan</h2>
+                        <h2 className="text-3xl font-bold text-gray-900">Premium Paid Counselling Support</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-[#E15583] to-[#8361D0] mx-auto mt-4 rounded-full"></div>
+                        <p className="mt-4 text-gray-500">Want guaranteed expert support for your NEET admission?</p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                    <div className="grid lg:grid-cols-1 gap-8 max-w-md mx-auto">
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
@@ -128,10 +131,6 @@ const MBBSCounselling = () => {
                                         <div>
                                             <h3 className="text-2xl font-bold mb-2">{plan.title}</h3>
                                             <p className="opacity-90 font-medium text-sm leading-relaxed max-w-md">{plan.subtitle}</p>
-                                        </div>
-                                        <div className="text-right">
-                                            <span className="block text-sm opacity-80">Starting at</span>
-                                            <span className="text-3xl font-bold">₹ {parseInt(plan.price).toLocaleString()}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +156,7 @@ const MBBSCounselling = () => {
                                         onClick={() => handleBuyNow(plan)}
                                         className={`w-full py-4 rounded-xl font-bold text-lg text-white shadow-lg transition transform hover:-translate-y-1 active:scale-95 cursor-pointer ${plan.color === 'purple' ? 'bg-gradient-to-r from-[#E15583] to-[#8361D0] hover:shadow-primary-purple/30' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:shadow-blue-500/30'}`}
                                     >
-                                        Buy Now
+                                        Book Now +91 95889 28940
                                     </button>
                                 </div>
                             </div>

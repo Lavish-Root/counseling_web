@@ -3,7 +3,7 @@ import HeroSection from '../components/HeroSection';
 import NotificationSlider from '../components/NotificationSlider';
 import StatsDisplay from '../components/StatsDisplay';
 import OneOnOneSection from '../components/HomeSections/OneOnOneSection';
-import PredictorSection from '../components/HomeSections/PredictorSection';
+import PredictorSection from '../components/HomeSections/CoursesSection';
 import EBooksSection from '../components/HomeSections/EBooksSection';
 import ConnectorSection from '../components/HomeSections/ConnectorSection';
 import FeaturedInSection from '../components/HomeSections/FeaturedInSection';

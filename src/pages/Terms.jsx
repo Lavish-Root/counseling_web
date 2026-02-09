@@ -34,7 +34,7 @@ const Terms = () => {
                                 <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Acceptance of Terms</h2>
                                 <div className="text-gray-600 leading-relaxed space-y-4">
                                     <p>
-                                        By accessing and using <strong>NextStep Counsel.in</strong> ("we", "us", or "our"), you accept and agree to be bound by the terms and provisions of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services.
+                                        By accessing and using <strong>NextStep Counsel</strong> ("we", "us", or "our"), you accept and agree to be bound by the terms and provisions of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services.
                                     </p>
                                     <p>
                                         ANY PARTICIPATION IN THIS SERVICE WILL CONSTITUTE ACCEPTANCE OF THIS AGREEMENT. IF YOU DO NOT AGREE TO ABIDE BY THE ABOVE, PLEASE DO NOT USE THIS SERVICE.
@@ -106,7 +106,7 @@ const Terms = () => {
                                 <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">Limitation of Liability</h2>
                                 <div className="text-gray-600 leading-relaxed space-y-4">
                                     <p>
-                                        Sartha Education shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.
+                                        NextStep Counsel shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.
                                     </p>
                                 </div>
                             </div>

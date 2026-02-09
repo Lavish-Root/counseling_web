@@ -49,11 +49,12 @@ const Login = () => {
             <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
                     <Link to="/">
-                        <img
+                        {/* <img
                             src="/assets/sartha-logo-square.png"
                             alt="NextStep Counsel"
                             className="h-12 object-contain mb-8"
-                        />
+                        /> */}
+                        <span className="text-3xl font-bold text-gray-900 mb-8 block">NextStep Counsel</span>
                     </Link>
                     <h2 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h2>
                     <p className="text-gray-500 text-sm">Please enter your details to sign in</p>
