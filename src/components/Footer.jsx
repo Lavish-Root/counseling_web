@@ -3,13 +3,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaYoutube, FaWhatsapp, FaEnvelope, FaTelegramPlane, FaInstagram } from 'react-icons/fa';
 
+import logo from '../assets/nextstep_logo.jpg';
+
 const Footer = () => {
     return (
         <footer className="bg-dark-bg text-white pt-16 pb-8 border-t border-gray-800">
             <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8 mb-12">
                 {/* Brand & About */}
                 <div>
-                    <Link to="/" className="text-3xl font-bold mb-4 block">NextStep Counsel</Link>
+                    <Link to="/" className="mb-4 block">
+                        <img src={logo} alt="NextStep Counsel" className="h-12 w-auto rounded-full" />
+                    </Link>
                     <p className="text-gray-400 text-sm mb-6">
                         India’s Trusted Counselling & Career Guidance Platform. We guide students from Registration to Final Admission with complete transparency and expert support.
                     </p>

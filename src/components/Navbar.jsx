@@ -4,6 +4,8 @@ import { FaArrowRight, FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import SearchModal from './SearchModal';
 
+import logo from '../assets/nextstep_logo.jpg';
+
 const Navbar = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -23,8 +25,8 @@ const Navbar = () => {
     // Close menu when route changes
     React.useEffect(() => {
         setIsMobileMenuOpen(false);
-    }, [location]); 
-    
+    }, [location]);
+
 
     return (
         <>
@@ -32,7 +34,7 @@ const Navbar = () => {
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     {/* Logo */}
                     <Link to="/" className="flex flex-col z-50 relative">
-                        <span className="text-2xl font-bold text-gray-900">NextStep Counsel</span>
+                        <img src={logo} alt="NextStep Counsel" className="h-12 w-auto" />
                     </Link>
 
                     {/* Desktop Menu */}
