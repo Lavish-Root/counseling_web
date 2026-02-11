@@ -12,37 +12,69 @@ const MBBSCounselling = () => {
 
     const plans = [
         {
-            title: "💎 PREMIUM PAID COUNSELLING",
-            subtitle: "Guaranteed Expert Support for NEET Admission",
-            price: "19999", // Adjusted placeholder price or remove price if not specified
+            title: "Next Step Foundations",
+            subtitle: "Essential Data for Smart Decisions",
+            price: "99",
             features: [
-                "1-to-1 Personal Mentor",
-                "Best College Selection Guidance",
-                "Round-wise Seat Planning",
-                "Choice Filling Done with Expert Support",
-                "Dedicated WhatsApp Help",
-                "Full Admission Process Assistance",
-                "Document Verification Help",
-                "Spot Round & Mop-Up Guidance"
+                "Round wise NEET cut off (2023-2025) For MCC All India quota and State quota.",
+                "Colleges details, Fees Structure of all colleges.",
+                "Top ranking General/Common preference list.",
+                "Counseling rule of MCC All India and All state Including Information bulletin /brochure.",
+                "Colleges Bond details.",
+                "Notification through WhatsApp Community.",
+                "Counselling rules and domicile rules for all States."
             ],
-            note: "Best Option for Serious Medical Aspirants.",
+            note: "Perfect for self-guided research.",
+            color: "blue"
+        },
+        {
+            title: "Next Step Navigator",
+            subtitle: "Expert Guidance & Smart Tools",
+            price: "4999",
+            features: [
+                "Expert Counselling: Covers MBBS/BDS for All India & State quotas.",
+                "NEET Mentors: One-on-one support for admissions.",
+                "Expert Access: Ongoing WhatsApp & Call support until the final round.",
+                "Smart Choice-Filling: Custom lists based on your rank, category, and location.",
+                "College Data: Quick access to essential cut-offs and fee info.",
+                "Video Walkthroughs: Visual guides for error-free form filling.",
+                "Rule Updates: Clear explanations of MCC and State-level rules.",
+                "Community Alerts: Fast notifications through WhatsApp."
+            ],
+            note: "Balanced support for most aspirants.",
+            color: "teal"
+        },
+        {
+            title: "Next Step Elite",
+            subtitle: "Comprehensive Premium Support",
+            price: "9999",
+            features: [
+                "Full Counselling Support: Comprehensive guidance for Government, Private, and Deemed Colleges (MBBS & BDS) across MCC All India and all States.",
+                "NEET Mentors: One-on-one support for both the NEET exam and the admissions process.",
+                "Expert Access: Ongoing WhatsApp and Call support with senior experts until the final round (10 AM - 7 PM, Mon-Sat).",
+                "Smart Choice-Filling: Tailored preference lists customized for your profile.",
+                "College Data: Quick access to essential college details, including cut-offs and fee structures.",
+                "Video Walkthroughs: Visual guides for various form-filling procedures.",
+                "Rule Updates: Clear explanations of MCC All India and State-specific counselling rules.",
+                "Community Alerts: Real-time notifications via our WhatsApp Community."
+            ],
+            note: "Ultimate guidance for top-tier results.",
             color: "purple"
         }
     ];
 
     const faqs = [
         {
-            question: "What is MBBS counselling?",
-            answer: "MBBS counselling is the official procedure for gaining admission to medical colleges after the NEET exam. Based on your NEET score or rank, you are assigned a college through either the All India Quota (AIQ) or State Quota counselling."
+            question: "What is MBBS/BDS counselling?",
+            answer: "MBBS/BDS counselling is the official seat allocation process through which eligible NEET-UG candidates are allotted MBBS or BDS seats in medical and dental colleges based on rank, category, and preferences."
         },
-        // ... (Keep existing FAQs or update if needed)
         {
-            question: "Who conducts MBBS counselling in India?",
-            answer: "The Medical Counselling Committee (MCC) conducts the All India Quota (AIQ) for 15% of government seats and 100% of seats in deemed/central universities. State counselling authorities conduct counselling for the remaining 85% state quota seats."
+            question: "Who conducts MBBS/BDS counselling in India?",
+            answer: "MBBS/BDS counselling is conducted by the Medical Counselling Committee (MCC) for All India Quota seats and by respective State Authorities for State Quota seats."
         },
         {
             question: "What documents are typically required?",
-            answer: "Key documents include: NEET Admit Card & Scorecard, 10th and 12th Marksheets, Domicile Certificate, Caste/Category Certificate (if applicable), ID Proof (Aadhaar/PAN), and passport-sized photographs."
+            answer: "Commonly required documents include NEET-UG scorecard, admit card, Class 10 & 12 certificates, identity proof, category certificate (if applicable), and counselling registration slip."
         }
     ];
 
@@ -61,9 +93,9 @@ const MBBSCounselling = () => {
                         NEET Counselling is the most important step after NEET results. Many students lose seats due to wrong decisions. We provide complete support.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm font-medium text-blue-200">
-                        <span className="bg-blue-900/50 px-3 py-1 rounded-full border border-blue-700">MCC All India Quota</span>
-                        <span className="bg-blue-900/50 px-3 py-1 rounded-full border border-blue-700">State Counselling</span>
-                        <span className="bg-blue-900/50 px-3 py-1 rounded-full border border-blue-700">College Prediction</span>
+                        <span className="bg-orange-600/50 px-3 py-1 rounded-full border border-orange-500 text-orange-100">MCC All India Quota</span>
+                        <span className="bg-white/20 px-3 py-1 rounded-full border border-white/40 text-white">State Quota Counselling</span>
+                        <span className="bg-green-600/50 px-3 py-1 rounded-full border border-green-500 text-green-100">College Prediction</span>
                     </div>
                 </div>
             </section>
@@ -120,7 +152,7 @@ const MBBSCounselling = () => {
                         <p className="mt-4 text-gray-500">Want guaranteed expert support for your NEET admission?</p>
                     </div>
 
-                    <div className="grid lg:grid-cols-1 gap-8 max-w-md mx-auto">
+                    <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
@@ -180,7 +212,7 @@ const MBBSCounselling = () => {
                                 className="border border-gray-200 rounded-xl overflow-hidden hover:border-primary-purple/50 transition duration-300"
                             >
                                 <button
-                                    className="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-white text-left focus:outline-none transition-colors duration-300"
+                                    className="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-white text-left focus:outline-none transition-colors duration-300 cursor-pointer"
                                     onClick={() => toggleFaq(index)}
                                 >
                                     <span className="font-semibold text-gray-900 text-lg">{faq.question}</span>
@@ -208,11 +240,11 @@ const MBBSCounselling = () => {
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-2xl font-bold mb-8">Need help choosing a plan?</h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <a href="https://wa.me/918947910355" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition">
+                        <a href="https://wa.me/919588928940" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition">
                             <FaWhatsapp size={20} /> Chat on WhatsApp
                         </a>
-                        <a href="tel:8947910355" className="flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-bold transition">
-                            <FaPhoneAlt size={18} /> Call +91 8947910355
+                        <a href="tel:9588928940" className="flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-bold transition">
+                            <FaPhoneAlt size={18} /> Call +91 9588928940
                         </a>
                     </div>
                 </div>

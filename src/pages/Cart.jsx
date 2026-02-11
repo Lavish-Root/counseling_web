@@ -101,7 +101,7 @@ const Cart = () => {
                                 </div>
                             </div>
 
-                            <button className="w-full bg-gradient-to-r from-[#E15583] to-[#8361D0] text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:-translate-y-1 active:scale-95 mb-4">
+                            <button className="w-full bg-gradient-to-r from-[#E15583] to-[#8361D0] text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:-translate-y-1 active:scale-95 mb-4 cursor-pointer">
                                 Proceed to Payment
                             </button>
 

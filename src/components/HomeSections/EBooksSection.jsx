@@ -17,11 +17,19 @@ const EBooksSection = () => {
                         Comprehensive guides containing everything you need to know about medical counselling, seat matrices, fee structures, and bond details.
                     </p>
 
-                    <div className="space-y-4 mb-10">
-                        {["State-wise counselling process", "College-wise cutoff data", "Document checklists & Bonds"].map((item, i) => (
-                            <div key={i} className="flex items-center gap-4 p-4 rounded-xl bg-orange-50/50 border border-orange-100 hover:bg-orange-50 transition">
-                                <div className="bg-white p-2 rounded-lg shadow-sm text-orange-500"><FaBook /></div>
-                                <span className="font-semibold text-gray-700">{item}</span>
+                    <div className="grid grid-cols-1 gap-3 mb-10">
+                        {[
+                            "Round-wise NEET Cut-off (2023-2025) for MCC All India Quota & State Quota",
+                            "Fees Structure of all Colleges",
+                            "Top Ranking General/Common Preference List",
+                            "Counselling Rules of MCC All India & All States (Information Bulletin/Brochure)",
+                            "State Bond Details",
+                            "Notification through WhatsApp Community",
+                            "Counselling & Domicile Rules for all States"
+                        ].map((item, i) => (
+                            <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-orange-50/50 border border-orange-100 hover:bg-orange-50 transition">
+                                <div className="bg-white p-1.5 rounded shadow-sm text-orange-500 mt-0.5 flex-shrink-0"><FaBook size={12} /></div>
+                                <span className="font-medium text-gray-700 text-sm">{item}</span>
                             </div>
                         ))}
                     </div>

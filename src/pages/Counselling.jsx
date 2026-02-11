@@ -6,41 +6,41 @@ const Counselling = () => {
     const services = [
         {
             title: "MBBS Counselling",
-            subtitle: "Medical",
+            subtitle: "Medical/DENTAL",
             icon: <FaStethoscope />,
             link: "/counselling/mbbs",
             color: "from-blue-500 to-cyan-500",
             bg: "bg-blue-50 text-blue-600"
         },
         {
-            title: "BDS Counselling",
-            subtitle: "Dental",
+            title: "JEE Counselling",
+            subtitle: "ENGINEERING",
             icon: <FaTooth />,
-            link: "/counselling/bds",
+            link: "/counselling/jee",
             color: "from-teal-500 to-emerald-500",
             bg: "bg-teal-50 text-teal-600"
         },
         {
-            title: "AYUSH Counselling",
-            subtitle: "Ayu, Homeo, Unani",
+            title: "AYUSH/BVSC & AH Counselling",
+            subtitle: "AYU, HOMEO, UNANI, Veterinary",
             icon: <FaLeaf />,
             link: "/counselling/ayush",
             color: "from-green-500 to-lime-500",
             bg: "bg-green-50 text-green-600"
         },
         {
-            title: "BVSC & AH Counselling",
-            subtitle: "Veterinary",
+            title: "Central Govt. Exam Counselling",
+            subtitle: "UPSC, SSC, Railway, Banking, Defence",
             icon: <FaPaw />,
-            link: "/counselling/bvsc-ah",
+            link: "/counselling/central-govt",
             color: "from-orange-500 to-amber-500",
             bg: "bg-orange-50 text-orange-600"
         },
         {
-            title: "CUET Counselling",
-            subtitle: "Central Universities",
+            title: "State Govt. Exam Counselling ",
+            subtitle: "State PSC, Police, Patwari, TET",
             icon: <FaUniversity />,
-            link: "/counselling/cuet",
+            link: "/counselling/state-govt",
             color: "from-pink-500 to-rose-500",
             bg: "bg-pink-50 text-pink-600"
         }
@@ -62,7 +62,7 @@ const Counselling = () => {
                         </span>
                     </h1>
                     <p className="text-lg md:text-xl text-gray-300 mb-8 font-medium tracking-wide">
-                        MBBS • BDS • AYUSH • BVSc & AH • CUET
+                        MBBS/BDS, JEE, AYUSH/BVSC & AH, Central Govt. Exam, State Govt. Exam
                     </p>
 
                     <a
@@ -74,10 +74,10 @@ const Counselling = () => {
                         <FaDownload /> Download Brochure
                     </a>
                 </div>
-            </section>
+            </section >
 
             {/* Services Grid */}
-            <section className="py-20 bg-gray-50">
+            < section className="py-20 bg-gray-50" >
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-gray-900">Choose Your Counseling Path</h2>
@@ -107,10 +107,10 @@ const Counselling = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Join Us / CTA Section (Reused from Predictor for consistency) */}
-            <section className="py-20 bg-white border-t border-gray-100">
+            < section className="py-20 bg-white border-t border-gray-100" >
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900">Join our Community</h2>
@@ -149,8 +149,8 @@ const Counselling = () => {
 
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };
 

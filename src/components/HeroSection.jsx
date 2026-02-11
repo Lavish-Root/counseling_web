@@ -51,8 +51,12 @@ const HeroSection = () => {
                     </h1>
                 </motion.div>
 
-                <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-4xl mx-auto font-medium leading-relaxed">
+                <p className="text-xl md:text-2xl text-gray-500 mb-6 max-w-4xl mx-auto font-medium leading-relaxed">
                     <span className="text-gray-900 font-bold">NEET UG Counselling Guidance</span> • <span className="text-gray-900 font-bold">Medical Admission Support</span> • <span className="text-gray-900 font-bold">Competitive Exam Career Counselling</span> • <span className="text-gray-900 font-bold">Latest Education Updates</span>
+                </p>
+
+                <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                    We guide students from Registration to Final Admission with complete transparency and expert support.
                 </p>
 
                 {/* Features - Always Visible Now */}

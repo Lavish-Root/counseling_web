@@ -21,6 +21,9 @@ import BDSCounselling from '../pages/BDSCounselling'; // Import BDSCounselling
 import AyushCounselling from '../pages/AyushCounselling'; // Import AyushCounselling
 import BVScCounselling from '../pages/BVScCounselling'; // Import BVScCounselling
 import CUETCounselling from '../pages/CUETCounselling'; // Import CUETCounselling
+import JEECounselling from '../pages/JEECounselling'; // Import JEECounselling
+import CentralGovtCounselling from '../pages/CentralGovtCounselling'; // Import CentralGovtCounselling
+import StateGovtCounselling from '../pages/StateGovtCounselling'; // Import StateGovtCounselling
 
 import Cart from '../pages/Cart'; // Import Cart
 
@@ -42,6 +45,9 @@ const AppRoutes = () => {
             <Route path="/counselling/ayush" element={<AyushCounselling />} />
             <Route path="/counselling/bvsc-ah" element={<BVScCounselling />} />
             <Route path="/counselling/cuet" element={<CUETCounselling />} />
+            <Route path="/counselling/jee" element={<JEECounselling />} />
+            <Route path="/counselling/central-govt" element={<CentralGovtCounselling />} />
+            <Route path="/counselling/state-govt" element={<StateGovtCounselling />} />
             <Route path="/ebooks" element={<EBooks />} />
             <Route path="/counselling/:type" element={<Counselling />} /> {/* Placeholder for other sub-routes */}
             <Route path="/cart" element={<Cart />} />

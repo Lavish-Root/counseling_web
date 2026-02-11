@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaCheckCircle, FaWhatsapp, FaPhoneAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
-const AyushCounselling = () => {
+const StateGovtCounselling = () => {
     const navigate = useNavigate();
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
@@ -12,56 +12,72 @@ const AyushCounselling = () => {
 
     const plans = [
         {
-            title: "AYUSH & Veterinary Next Step Navigator",
-            subtitle: "Plan – 1",
-            price: "5000",
+            title: "Starter Plan",
+            subtitle: "Best for beginners & first-time aspirants",
+            price: "999",
             features: [
-                "Courses Covered: Govt. BAMS, Govt. BHMS, Govt. BUMS, Veterinary – B.V.Sc. & A.H. (Govt.)",
-                "Direct contact with Expert Senior Counsellors",
-                "Doubt solving via WhatsApp & Call",
-                "Complete college details (Cut-off + Fees)",
-                "Preference list preparation based on student’s score & rank",
-                "Applicable for All India Quota + State Quota"
+                "Exam selection guidance (PSC / Police / Patwari / TET)",
+                "Eligibility & age criteria check",
+                "Application form filling guidance",
+                "Syllabus & exam pattern overview",
+                "Important dates & notification support"
             ],
-            note: "No Fee Refund Policy (as per app rules)",
+            note: "Ideal for checking eligibility & basic info.",
             color: "blue"
         },
         {
-            title: "AYUSH & Veterinary Next Step Elite",
-            subtitle: "Plan – 2",
-            price: "10000",
+            title: "Pro Plan ⭐ Most Popular",
+            subtitle: "Serious aspirants ke liye complete planning",
+            price: "2499",
             features: [
-                "Courses Covered: Govt. + Private + Deemed (BAMS, BHMS, BUMS); Veterinary (B.V.Sc. & A.H.) Govt. + Private",
-                "Direct contact with Expert Senior Counsellors",
-                "Doubt solving via WhatsApp & Call",
-                "Complete college details (Cut-off + Fees)",
-                "Preference list preparation based on student’s score & rank"
+                "All Starter Plan benefits",
+                "Post-wise & category-wise guidance",
+                "State-wise vacancy & cutoff analysis",
+                "Prelims / Mains / Physical / TET strategy",
+                "Preference filling & option selection support",
+                "One-on-one counselling session"
             ],
-            note: "No Fee Refund Policy (as per app rules)",
+            note: "Best value for serious preparation.",
+            color: "blue"
+        },
+        {
+            title: "Premium Plan",
+            subtitle: "End-to-end counselling + career roadmap",
+            price: "4999",
+            features: [
+                "All Pro Plan benefits",
+                "Personalized exam & state roadmap",
+                "Multiple exam planning (PSC + Police + TET etc.)",
+                "Document verification checklist",
+                "Interview / Physical test guidance",
+                "Dedicated counsellor support",
+                "Priority WhatsApp & call assistance"
+            ],
+            note: "Complete career guidance till selection.",
             color: "purple"
         }
     ];
 
     const faqs = [
         {
-            question: "What courses come under AYUSH & Veterinary Counselling?",
-            answer: "AYUSH counselling includes BAMS, BUMS, BHMS, BSMS, and BNYS courses, while Veterinary counselling covers BVSc & AH (Bachelor of Veterinary Science & Animal Husbandry)."
+            question: "What is State Government Exam counselling?",
+            answer: "State Government Exam counselling is a guidance process that helps candidates choose suitable state-level exams, understand eligibility, exam patterns, and plan preparation for government jobs."
         },
         {
-            question: "Is NEET mandatory for AYUSH & Veterinary courses?",
-            answer: "Yes. NEET-UG qualification is mandatory for admission to AYUSH and Veterinary courses as per current admission guidelines."
+            question: "Are State Government exams compulsory for state jobs?",
+            answer: "Yes. Most State Government jobs require candidates to qualify specific state-level exams conducted by State PSCs or recruitment boards."
         },
         {
-            question: "Who conducts the counselling for AYUSH & Veterinary?",
-            answer: "AYUSH counselling is conducted by AACCC (for All India Quota) and State Authorities, while Veterinary counselling is conducted by respective State Counselling Bodies."
+            question: "How do I apply for State Government exams?",
+            answer: "Candidates must register through the official websites of State Public Service Commissions (PSC) or respective State Recruitment Boards."
         },
         {
-            question: "Are there bonds in AYUSH & Veterinary colleges?",
-            answer: "Bond policies vary by state and institution. Some government colleges may have service or penalty bonds, while many private colleges do not."
+            question: "What documents are required?",
+            answer: "Common documents include educational certificates, identity proof, domicile certificate, category certificate (if applicable), and exam application confirmation."
         },
         {
-            question: "Can I apply for both MBBS/BDS and AYUSH & Veterinary Counselling?",
-            answer: "Yes. Eligible candidates can apply for MBBS/BDS as well as AYUSH & Veterinary counselling simultaneously, subject to NEET eligibility and counselling rules."
+            question: "Can I apply for multiple State Government exams?",
+            answer: "Yes. Eligible candidates can apply for multiple state-level exams simultaneously, subject to eligibility criteria and exam schedules."
         }
     ];
 
@@ -75,10 +91,55 @@ const AyushCounselling = () => {
             <section className="relative bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 lg:py-28">
                 <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">AYUSH/BVSC & AH Counselling</h1>
-                    <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                        Expert guidance for BAMS, BHMS, BUMS, Veterinary Admissions. Get personalized support for AACCC & State Quota counselling.
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">State Govt. Exam Counselling & Guidance</h1>
+                    <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                        Expert guidance for State Government examinations including PSC, Police, Patwari & TET.
+                        Get personalized counselling support for exam selection, form filling, eligibility checks, post-wise guidance, and complete career planning for state-level government jobs.
                     </p>
+
+                </div>
+            </section>
+
+            {/* Intro/Services Section */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Expert Support for State Exams</h2>
+                            <p className="text-gray-600 mb-6 leading-relaxed">
+                                State exams have unique patterns and eligibility criteria. Our mentors help you navigate these specific requirements to maximize your success rate.
+                            </p>
+                            <ul className="space-y-3">
+                                {[
+                                    "State-Specific Syllabus Analysis",
+                                    "Reservation & Domicile Guidance",
+                                    "Application Form Support",
+                                    "Previous Year Paper Analysis",
+                                    "Physical Standard Test Tips",
+                                    "Final Merit List Assistance"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-3 text-gray-700 font-medium">
+                                        <FaCheckCircle className="text-green-500 flex-shrink-0" /> {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                            <h3 className="text-xl font-bold mb-4 text-blue-800">State-Specific Focus</h3>
+                            <p className="text-gray-600 mb-4">
+                                Gain an edge with knowledge of local trends and specific state recruitment policies.
+                            </p>
+                            <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
+                                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-xl">
+                                    <FaWhatsapp />
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase font-bold">Get Guidance Now</p>
+                                    <p className="font-bold text-lg text-gray-900">95889 28940</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -86,11 +147,12 @@ const AyushCounselling = () => {
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900">Choose Your Plan</h2>
+                        <h2 className="text-3xl font-bold text-gray-900">Counselling Plans</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-[#E15583] to-[#8361D0] mx-auto mt-4 rounded-full"></div>
+                        <p className="mt-4 text-gray-500">Affordable and effective guidance.</p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                    <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
@@ -101,10 +163,6 @@ const AyushCounselling = () => {
                                         <div>
                                             <h3 className="text-2xl font-bold mb-2">{plan.title}</h3>
                                             <p className="opacity-90 font-medium text-sm leading-relaxed max-w-md">{plan.subtitle}</p>
-                                        </div>
-                                        <div className="text-right">
-                                            <span className="block text-sm opacity-80">Starting at</span>
-                                            <span className="text-3xl font-bold">₹ {parseInt(plan.price).toLocaleString()}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -130,7 +188,7 @@ const AyushCounselling = () => {
                                         onClick={() => handleBuyNow(plan)}
                                         className={`w-full py-4 rounded-xl font-bold text-lg text-white shadow-lg transition transform hover:-translate-y-1 active:scale-95 cursor-pointer ${plan.color === 'purple' ? 'bg-gradient-to-r from-[#E15583] to-[#8361D0] hover:shadow-primary-purple/30' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:shadow-blue-500/30'}`}
                                     >
-                                        Buy Now
+                                        Book Now +91 95889 28940
                                     </button>
                                 </div>
                             </div>
@@ -195,4 +253,4 @@ const AyushCounselling = () => {
     );
 };
 
-export default AyushCounselling;
+export default StateGovtCounselling;

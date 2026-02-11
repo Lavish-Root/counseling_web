@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCalendarAlt, FaUser, FaArrowRight, FaTag } from 'react-icons/fa';
+import { FaCalendarAlt, FaUser, FaArrowRight, FaTag, FaYoutube, FaPlay } from 'react-icons/fa';
 
 const Blogs = () => {
     const blogs = [
@@ -120,6 +120,64 @@ const Blogs = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+
+                    {/* YouTube Videos Section */}
+                    <div className="mt-20 mb-10">
+                        <div className="flex items-center gap-3 mb-8 justify-center">
+                            <div className="bg-red-100 p-3 rounded-full text-red-600">
+                                <FaYoutube size={24} />
+                            </div>
+                            <h2 className="text-3xl font-bold text-gray-900">Featured Videos</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                            {[
+                                {
+                                    id: 1,
+                                    title: "NEET 2025 Strategy | How to Score 650+",
+                                    thumbnail: "https://placehold.co/600x400/FF0000/ffffff?text=NEET+Strategy",
+                                    url: "https://www.youtube.com",
+                                    duration: "15:20"
+                                },
+                                {
+                                    id: 2,
+                                    title: "Complete Counselling Process Explained",
+                                    thumbnail: "https://placehold.co/600x400/FF0000/ffffff?text=Counselling+Process",
+                                    url: "https://www.youtube.com",
+                                    duration: "12:45"
+                                },
+                                {
+                                    id: 3,
+                                    title: "Best Medical Colleges in India",
+                                    thumbnail: "https://placehold.co/600x400/FF0000/ffffff?text=Best+Colleges",
+                                    url: "https://www.youtube.com",
+                                    duration: "10:10"
+                                }
+                            ].map((video) => (
+                                <div key={video.id} className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 overflow-hidden">
+                                    <a href={video.url} target="_blank" rel="noreferrer" className="block relative h-48 overflow-hidden">
+                                        <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                                            <div className="bg-red-600 text-white p-3 rounded-full transform group-hover:scale-110 transition-transform shadow-lg">
+                                                <FaPlay size={16} className="ml-1" />
+                                            </div>
+                                        </div>
+                                        <span className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded font-medium">
+                                            {video.duration}
+                                        </span>
+                                    </a>
+                                    <div className="p-5">
+                                        <h3 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors line-clamp-2 mb-2">
+                                            {video.title}
+                                        </h3>
+                                        <a href={video.url} target="_blank" rel="noreferrer" className="text-sm font-semibold text-gray-500 hover:text-red-600 transition-colors flex items-center gap-1">
+                                            Watch on YouTube <FaArrowRight size={10} />
+                                        </a>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <div className="mt-16 text-center">

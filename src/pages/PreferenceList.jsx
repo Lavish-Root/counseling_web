@@ -126,7 +126,7 @@ const PreferenceList = () => {
                                 <button
                                     onClick={handleGenerate}
                                     disabled={isGenerating}
-                                    className={`w-full py-4 rounded-xl font-bold text-white transition-all flex items-center justify-center gap-2 ${isGenerating ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-lg hover:scale-[1.02]'}`}
+                                    className={`w-full py-4 rounded-xl font-bold text-white transition-all flex items-center justify-center gap-2 ${isGenerating ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-lg hover:scale-[1.02] cursor-pointer'}`}
                                 >
                                     {isGenerating ? (
                                         <><FaSpinner className="animate-spin" /> Generating...</>
@@ -163,7 +163,7 @@ const PreferenceList = () => {
 
                                 <button
                                     onClick={handleDownloadSample}
-                                    className="w-full bg-white text-blue-600 border-2 border-blue-600 py-3 rounded-xl font-bold hover:bg-blue-50 transition flex items-center justify-center gap-2"
+                                    className="w-full bg-white text-blue-600 border-2 border-blue-600 py-3 rounded-xl font-bold hover:bg-blue-50 transition flex items-center justify-center gap-2 cursor-pointer"
                                 >
                                     <FaDownload /> Download Sample PDF
                                 </button>
@@ -173,7 +173,7 @@ const PreferenceList = () => {
                             <div className="bg-gradient-to-r from-pink-500 to-rose-500 p-8 rounded-2xl shadow-lg text-white">
                                 <h3 className="text-xl font-bold mb-2">Need Expert Help?</h3>
                                 <p className="mb-4 opacity-90 text-sm">Our counsellors can create a hand-picked preference list just for you.</p>
-                                <button className="bg-white text-pink-600 px-6 py-2 rounded-full font-bold text-sm hover:shadow-lg transition">
+                                <button className="bg-white text-pink-600 px-6 py-2 rounded-full font-bold text-sm hover:shadow-lg transition cursor-pointer">
                                     Book Session
                                 </button>
                             </div>

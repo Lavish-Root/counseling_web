@@ -7,30 +7,25 @@ const EBooks = () => {
 
     const ebooks = [
         {
-            id: 'inicet-counseling-ebook',
-            title: "INICET COUNSELING E-BOOK",
-            description: "Detailed Guide ebook for INICET NOV 2025 Counseling including Previous Year Roundwise-Branchwise Cutoff",
-            price: 499,
-            originalPrice: 999,
-            image: "https://placehold.co/400x500/E15583/ffffff?text=INICET+Guide", // Placeholder until real image is available
-            rating: 4.8,
-            reviews: 124,
-            category: "Medical"
-        },
-        // Placeholder for future ebooks
-        /*
-        {
-            id: 'neet-ug-guide',
-            title: "NEET UG Counselling Master Guide",
-            description: "Step-by-step guide for All India & State Quota counselling processes.",
-            price: 599,
-            originalPrice: 1299,
-            image: "https://placehold.co/400x500/8361D0/ffffff?text=NEET+UG",
-            rating: 4.9,
-            reviews: 210,
-            category: "Medical"
+            id: 'next-step-foundations',
+            title: "Next Step Foundations",
+            description: "",
+            price: 99,
+            originalPrice: 499,
+            image: "https://placehold.co/400x500/0ea5e9/ffffff?text=Foundations+Plan",
+            rating: 5.0,
+            reviews: 45,
+            category: "Smart Plan",
+            features: [
+                "Round wise NEET cut off (2023-2025) For MCC All India quota and State quota.",
+                "Colleges details, Fees Structure of all colleges.",
+                "Top ranking General/Common preference list.",
+                "Counseling rule of MCC All India and All state including information bulletin /brochure.",
+                "Colleges Bond details.",
+                "Notification through WhatsApp Community.",
+                "Counselling rules and domicile rules for all States."
+            ]
         }
-        */
     ];
 
     const handleBuyNow = (ebook) => {
@@ -48,7 +43,7 @@ const EBooks = () => {
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Our eBooks Collection</h1>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                        Explore our collection of expertly crafted eBooks to enhance your college admission counselling process.
+                        Explore our collection of expertly crafted eBooks and plans to enhance your college admission counselling process.
                     </p>
                 </div>
             </section>
@@ -87,9 +82,18 @@ const EBooks = () => {
                                         </div>
 
                                         <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">{ebook.title}</h3>
-                                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                                            {ebook.description}
-                                        </p>
+
+                                        {ebook.features ? (
+                                            <ul className="text-gray-600 text-sm leading-relaxed mb-4 list-disc pl-5 space-y-1">
+                                                {ebook.features.map((feature, i) => (
+                                                    <li key={i}>{feature}</li>
+                                                ))}
+                                            </ul>
+                                        ) : (
+                                            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                                                {ebook.description}
+                                            </p>
+                                        )}
                                     </div>
 
                                     <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
@@ -99,7 +103,7 @@ const EBooks = () => {
                                         </div>
                                         <button
                                             onClick={() => handleBuyNow(ebook)}
-                                            className="bg-gradient-to-r from-[#E15583] to-[#8361D0] text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-purple-200 transition-all flex items-center gap-2 active:scale-95"
+                                            className="bg-gradient-to-r from-[#E15583] to-[#8361D0] text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-purple-200 transition-all flex items-center gap-2 active:scale-95 cursor-pointer"
                                         >
                                             <FaShoppingCart /> Buy Now
                                         </button>

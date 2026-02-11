@@ -135,7 +135,7 @@ const PredictorNEETUG = () => {
                                     <div>
                                         <p className="font-bold text-lg">Prediction Ready!</p>
                                         <p className="text-sm">Based on your rank <strong>{formData.rank}</strong>, we found <strong>24+ Colleges</strong> you are eligible for.</p>
-                                        <button className="mt-3 text-white bg-green-600 px-4 py-2 rounded-lg text-sm font-bold hover:bg-green-700 transition">
+                                        <button className="mt-3 text-white bg-green-600 px-4 py-2 rounded-lg text-sm font-bold hover:bg-green-700 transition cursor-pointer">
                                             Download Report
                                         </button>
                                     </div>
@@ -145,7 +145,7 @@ const PredictorNEETUG = () => {
                             <button
                                 onClick={handlePredict}
                                 disabled={isPredicting}
-                                className={`w-full py-4 rounded-xl font-bold text-white text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 ${isPredicting ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:scale-[1.02]'}`}
+                                className={`w-full py-4 rounded-xl font-bold text-white text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 ${isPredicting ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:scale-[1.02] cursor-pointer'}`}
                             >
                                 {isPredicting ? (
                                     <><FaSpinner className="animate-spin" /> Analyzing 1500+ Colleges...</>

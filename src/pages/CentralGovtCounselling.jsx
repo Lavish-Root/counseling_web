@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaCheckCircle, FaWhatsapp, FaPhoneAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
-const AyushCounselling = () => {
+const CentralGovtCounselling = () => {
     const navigate = useNavigate();
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
@@ -12,56 +12,78 @@ const AyushCounselling = () => {
 
     const plans = [
         {
-            title: "AYUSH & Veterinary Next Step Navigator",
-            subtitle: "Plan – 1",
-            price: "5000",
+            title: "Starter Guidance Plan",
+            subtitle: "Best for basic clarity & safe start",
+            price: "999",
             features: [
-                "Courses Covered: Govt. BAMS, Govt. BHMS, Govt. BUMS, Veterinary – B.V.Sc. & A.H. (Govt.)",
-                "Direct contact with Expert Senior Counsellors",
-                "Doubt solving via WhatsApp & Call",
-                "Complete college details (Cut-off + Fees)",
-                "Preference list preparation based on student’s score & rank",
-                "Applicable for All India Quota + State Quota"
+                "Exam-wise Counselling (UPSC / SSC / Railway / Banking / Defence)",
+                "Eligibility & Exam Pattern Explanation",
+                "Syllabus + Preparation Direction",
+                "Previous Year Cut-off & Trend Overview",
+                "Basic Form-Filling Guidance",
+                "Official Notice Updates (WhatsApp)",
+                "Common Mistakes to Avoid"
             ],
-            note: "No Fee Refund Policy (as per app rules)",
+            note: "Ideal for beginners & first-time aspirants",
             color: "blue"
         },
         {
-            title: "AYUSH & Veterinary Next Step Elite",
-            subtitle: "Plan – 2",
-            price: "10000",
+            title: "Smart Strategy Plan",
+            subtitle: "Rank + career focused planning",
+            price: "1999",
             features: [
-                "Courses Covered: Govt. + Private + Deemed (BAMS, BHMS, BUMS); Veterinary (B.V.Sc. & A.H.) Govt. + Private",
-                "Direct contact with Expert Senior Counsellors",
-                "Doubt solving via WhatsApp & Call",
-                "Complete college details (Cut-off + Fees)",
-                "Preference list preparation based on student’s score & rank"
+                "Everything in ₹999 Plan",
+                "Rank / Score Based Guidance",
+                "Post Preference Strategy (SSC / Banking / RRB)",
+                "Vacancy & Posting Location Insight",
+                "Document Verification Checklist",
+                "Job Profile, Salary & Promotion Explain",
+                "One-on-One Mentor Call (Limited)",
+                "WhatsApp Support till selection stage"
             ],
-            note: "No Fee Refund Policy (as per app rules)",
+            note: "Best for serious aspirants aiming safe selection",
+            color: "blue"
+        },
+        {
+            title: "Premium Success Plan",
+            subtitle: "Complete hand-holding till final joining",
+            price: "4999",
+            features: [
+                "Everything in ₹1999 Plan",
+                "Dedicated Personal Mentor Assigned",
+                "UPSC: Optional + Interview Guidance",
+                "SSC/Banking: Final Post Allotment Strategy",
+                "Defence: Written + SSB + Medical Guidance",
+                "Preference Filling (Live Support)",
+                "Error-Free Form & Choice Filling",
+                "Unlimited WhatsApp + Call Support",
+                "Support till Final Selection / Joining"
+            ],
+            note: "Perfect for rank-holders & high-stakes aspirants",
             color: "purple"
         }
     ];
 
     const faqs = [
         {
-            question: "What courses come under AYUSH & Veterinary Counselling?",
-            answer: "AYUSH counselling includes BAMS, BUMS, BHMS, BSMS, and BNYS courses, while Veterinary counselling covers BVSc & AH (Bachelor of Veterinary Science & Animal Husbandry)."
+            question: "What is Central Government Exam counselling?",
+            answer: "Central Government Exam counselling is a structured guidance process that helps candidates choose the right government exams, understand eligibility, selection process, and plan their preparation and career path."
         },
         {
-            question: "Is NEET mandatory for AYUSH & Veterinary courses?",
-            answer: "Yes. NEET-UG qualification is mandatory for admission to AYUSH and Veterinary courses as per current admission guidelines."
+            question: "Is any common exam required for Central Government jobs?",
+            answer: "No single exam applies to all posts. Different exams like SSC, UPSC, Banking, Railways, and Defence have their own eligibility criteria and selection processes."
         },
         {
-            question: "Who conducts the counselling for AYUSH & Veterinary?",
-            answer: "AYUSH counselling is conducted by AACCC (for All India Quota) and State Authorities, while Veterinary counselling is conducted by respective State Counselling Bodies."
+            question: "Who conducts Central Government recruitment exams?",
+            answer: "Central Government exams are conducted by bodies such as UPSC, SSC, IBPS, RRB, and respective ministries or departments."
         },
         {
-            question: "Are there bonds in AYUSH & Veterinary colleges?",
-            answer: "Bond policies vary by state and institution. Some government colleges may have service or penalty bonds, while many private colleges do not."
+            question: "What is the career scope in Central Government jobs?",
+            answer: "Central Government jobs offer stable careers with good salary, job security, promotions, pensions, and opportunities across administrative, technical, defence, and financial sectors."
         },
         {
-            question: "Can I apply for both MBBS/BDS and AYUSH & Veterinary Counselling?",
-            answer: "Yes. Eligible candidates can apply for MBBS/BDS as well as AYUSH & Veterinary counselling simultaneously, subject to NEET eligibility and counselling rules."
+            question: "Are government jobs available across different departments?",
+            answer: "Yes. Central Government jobs are available in multiple departments including administration, defence, railways, banking, taxation, research, and public sector undertakings."
         }
     ];
 
@@ -75,10 +97,55 @@ const AyushCounselling = () => {
             <section className="relative bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 lg:py-28">
                 <div className="absolute inset-0 bg-[url('/assets/bg-pattern.webp')] opacity-5 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">AYUSH/BVSC & AH Counselling</h1>
-                    <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                        Expert guidance for BAMS, BHMS, BUMS, Veterinary Admissions. Get personalized support for AACCC & State Quota counselling.
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Central Govt. Exam Counselling & Guidance</h1>
+                    <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                        Expert guidance for UPSC, SSC, Railway, Banking & Defence Exams.
+                        Right strategy, correct form filling & career-focused counselling for top Government Jobs.
                     </p>
+
+                </div>
+            </section>
+
+            {/* Intro/Services Section */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Your Path to a Government Career</h2>
+                            <p className="text-gray-600 mb-6 leading-relaxed">
+                                Crack the toughest exams with the right strategy. Our experts help you understand the exam pattern, syllabus, and selection process in depth.
+                            </p>
+                            <ul className="space-y-3">
+                                {[
+                                    "Exam Selection & Eligibility Checks",
+                                    "Personalized Study Roadmap",
+                                    "Form Filling & Preference Selection",
+                                    "Doubt Clearing Sessions",
+                                    "Interview Guidance",
+                                    "Final Selection Support"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-3 text-gray-700 font-medium">
+                                        <FaCheckCircle className="text-green-500 flex-shrink-0" /> {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                            <h3 className="text-xl font-bold mb-4 text-blue-800">Clear Your Doubts</h3>
+                            <p className="text-gray-600 mb-4">
+                                Confused about which post to prefer? Don't know the service conditions? Talk to our experts today.
+                            </p>
+                            <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
+                                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-xl">
+                                    <FaWhatsapp />
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-500 uppercase font-bold">Get Guidance Now</p>
+                                    <p className="font-bold text-lg text-gray-900">95889 28940</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -86,11 +153,12 @@ const AyushCounselling = () => {
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900">Choose Your Plan</h2>
+                        <h2 className="text-3xl font-bold text-gray-900">Premium Counselling Plans</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-[#E15583] to-[#8361D0] mx-auto mt-4 rounded-full"></div>
+                        <p className="mt-4 text-gray-500">Structured guidance for your dream job.</p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                    <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
@@ -101,10 +169,6 @@ const AyushCounselling = () => {
                                         <div>
                                             <h3 className="text-2xl font-bold mb-2">{plan.title}</h3>
                                             <p className="opacity-90 font-medium text-sm leading-relaxed max-w-md">{plan.subtitle}</p>
-                                        </div>
-                                        <div className="text-right">
-                                            <span className="block text-sm opacity-80">Starting at</span>
-                                            <span className="text-3xl font-bold">₹ {parseInt(plan.price).toLocaleString()}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -130,7 +194,7 @@ const AyushCounselling = () => {
                                         onClick={() => handleBuyNow(plan)}
                                         className={`w-full py-4 rounded-xl font-bold text-lg text-white shadow-lg transition transform hover:-translate-y-1 active:scale-95 cursor-pointer ${plan.color === 'purple' ? 'bg-gradient-to-r from-[#E15583] to-[#8361D0] hover:shadow-primary-purple/30' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:shadow-blue-500/30'}`}
                                     >
-                                        Buy Now
+                                        Book Now +91 95889 28940
                                     </button>
                                 </div>
                             </div>
@@ -180,7 +244,7 @@ const AyushCounselling = () => {
             {/* Contact CTA Section */}
             <section className="py-16 bg-gray-50 border-t border-gray-100">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-2xl font-bold mb-8">Need help choosing a plan?</h2>
+                    <h2 className="text-2xl font-bold mb-8">Need help with your preparation?</h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
                         <a href="https://wa.me/919588928940" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition">
                             <FaWhatsapp size={20} /> Chat on WhatsApp
@@ -195,4 +259,4 @@ const AyushCounselling = () => {
     );
 };
 
-export default AyushCounselling;
+export default CentralGovtCounselling;

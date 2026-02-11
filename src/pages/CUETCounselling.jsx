@@ -147,7 +147,7 @@ const CUETCounselling = () => {
                                 className="border border-gray-200 rounded-xl overflow-hidden hover:border-primary-purple/50 transition duration-300"
                             >
                                 <button
-                                    className="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-white text-left focus:outline-none transition-colors duration-300"
+                                    className="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-white text-left focus:outline-none transition-colors duration-300 cursor-pointer"
                                     onClick={() => toggleFaq(index)}
                                 >
                                     <span className="font-semibold text-gray-900 text-lg">{faq.question}</span>
@@ -175,11 +175,11 @@ const CUETCounselling = () => {
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-2xl font-bold mb-8">Need help choosing a plan?</h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <a href="https://wa.me/918947910355" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition">
+                        <a href="https://wa.me/919588928940" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition">
                             <FaWhatsapp size={20} /> Chat on WhatsApp
                         </a>
-                        <a href="tel:8947910355" className="flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-bold transition">
-                            <FaPhoneAlt size={18} /> Call +91 8947910355
+                        <a href="tel:9588928940" className="flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-bold transition">
+                            <FaPhoneAlt size={18} /> Call +91 9588928940
                         </a>
                     </div>
                 </div>
