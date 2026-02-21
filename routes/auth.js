@@ -168,7 +168,8 @@ router.post('/register', async (req, res) => {
         // Create JWT Payload
         const payload = {
             user: {
-                id: user.id
+                id: user.id,
+                role: user.role
             }
         };
 
@@ -179,7 +180,7 @@ router.post('/register', async (req, res) => {
             { expiresIn: '7d' },
             (err, token) => {
                 if (err) throw err;
-                res.json({ token, user: { id: user.id, name: user.name, email: user.email } });
+                res.json({ token, user: { id: user.id, name: user.name, email: user.email, role: user.role } });
             }
         );
 
@@ -221,7 +222,8 @@ router.post('/login', async (req, res) => {
         // Create JWT Payload
         const payload = {
             user: {
-                id: user.id
+                id: user.id,
+                role: user.role
             }
         };
 
@@ -232,7 +234,7 @@ router.post('/login', async (req, res) => {
             { expiresIn: '7d' },
             (err, token) => {
                 if (err) throw err;
-                res.json({ token, user: { id: user.id, name: user.name, email: user.email } });
+                res.json({ token, user: { id: user.id, name: user.name, email: user.email, role: user.role } });
             }
         );
 

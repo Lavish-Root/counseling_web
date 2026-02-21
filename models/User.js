@@ -28,6 +28,21 @@ const userSchema = new mongoose.Schema({
     },
     otpExpires: {
         type: Date
+    },
+    role: {
+        type: String,
+        enum: ['user', 'admin'],
+        default: 'user'
+    },
+    subscriptionPlan: {
+        type: String,
+        enum: ['free', 'basic', 'premium'],
+        default: 'free'
+    },
+    paymentStatus: {
+        type: String,
+        enum: ['unpaid', 'paid', 'failed'],
+        default: 'unpaid'
     }
 }, { timestamps: true });
 
