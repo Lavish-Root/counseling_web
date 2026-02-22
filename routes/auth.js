@@ -2,8 +2,10 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const { OAuth2Client } = require('google-auth-library');
 const User = require('../models/User');
 const sendEmail = require('../utils/email');
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 // Generate 6 digit OTP
 const generateOTP = () => {
@@ -280,6 +282,81 @@ router.post('/reset-password', async (req, res) => {
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server error');
+    }
+});
+
+// @route   POST /api/auth/google
+// @desc    Authenticate user with Google token
+// @access  Public
+router.post('/google', async (req, res) => {
+    try {
+        const { token } = req.body;
+
+        if (!token) {
+            return res.status(400).json({ message: 'No Google token provided' });
+        }
+
+        // Use Google's userinfo endpoint to get user details using the access token
+        const userInfoResponse = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+            headers: { Authorization: `Bearer ${token}` }
+        });
+
+        if (!userInfoResponse.ok) {
+            return res.status(400).json({ message: 'Invalid Google token' });
+        }
+
+        const payload = await userInfoResponse.json();
+        const { email, name, email_verified } = payload;
+
+        if (!email_verified) {
+            return res.status(400).json({ message: 'Google email is not verified' });
+        }
+
+        // Check for user
+        let user = await User.findOne({ email });
+
+        if (!user) {
+            // Create user
+            const salt = await bcrypt.genSalt(10);
+            const randomPassword = Math.random().toString(36).slice(-10) + Math.random().toString(36).slice(-10);
+            const hashedPassword = await bcrypt.hash(randomPassword, salt);
+
+            user = new User({
+                name: name,
+                email: email,
+                password: hashedPassword,
+                isVerified: true
+            });
+            await user.save();
+        } else if (!user.isVerified) {
+            // If user existed as unverified shell, verify them now
+            user.isVerified = true;
+            user.name = name; // Update name just in case
+            await user.save();
+        }
+
+        // Create JWT Payload
+        const jwtPayload = {
+            user: {
+                id: user.id,
+                role: user.role
+            }
+        };
+
+        // Sign Token
+        jwt.sign(
+            jwtPayload,
+            process.env.JWT_SECRET || 'secret',
+            { expiresIn: '7d' },
+            (err, signedToken) => {
+                if (err) throw err;
+                res.json({ token: signedToken, user: { id: user.id, name: user.name, email: user.email, role: user.role } });
+            }
+        );
+
+    } catch (err) {
+        console.error('Google Auth Error:', err);
+        res.status(500).json({ message: 'Server error during Google authentication' });
     }
 });
 
