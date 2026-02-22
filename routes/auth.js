@@ -296,16 +296,13 @@ router.post('/google', async (req, res) => {
             return res.status(400).json({ message: 'No Google token provided' });
         }
 
-        // Use Google's userinfo endpoint to get user details using the access token
-        const userInfoResponse = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-            headers: { Authorization: `Bearer ${token}` }
+        // Verify token with Google
+        const ticket = await client.verifyIdToken({
+            idToken: token,
+            audience: process.env.GOOGLE_CLIENT_ID,
         });
 
-        if (!userInfoResponse.ok) {
-            return res.status(400).json({ message: 'Invalid Google token' });
-        }
-
-        const payload = await userInfoResponse.json();
+        const payload = ticket.getPayload();
         const { email, name, email_verified } = payload;
 
         if (!email_verified) {
