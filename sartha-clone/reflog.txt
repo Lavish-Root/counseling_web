@@ -1,0 +1,26 @@
+﻿22ef6cd HEAD@{0}: rebase (finish): returning to refs/heads/main
+22ef6cd HEAD@{1}: rebase (continue): Fix backend URL to localhost for API and Google Login
+c31b7ca HEAD@{2}: pull --rebase origin main (start): checkout c31b7ca6d2e12657fa934689292f5c6ef8bafc52
+2da4c6d HEAD@{3}: commit: Fix backend URL to localhost for API and Google Login
+d064b64 HEAD@{4}: commit: fix(auth): switch to GoogleLogin iframe for mobile support
+71c6db9 HEAD@{5}: commit: feat(auth): integrate full Google Sign In flow
+d78c95a HEAD@{6}: commit: fix: resolve mobile register 'Something went wrong' and trim inputs
+6e59e52 HEAD@{7}: commit: Fix mobile login backend API mapping URL
+6c9e61c HEAD@{8}: commit: Refactor Modal CSS Layouts to Fix Hiding under Backdrop
+ec72340 HEAD@{9}: commit: Fix React Dashboard crash on undefined db user fields
+275e51b HEAD@{10}: commit: Implement Advanced Admin Dashboard CRUD controls
+0e00a9e HEAD@{11}: commit: Initialize Admin Dashboard and Secure Role-Based Routing
+3f6c85a HEAD@{12}: commit: Configure dynamic VITE_BACKEND_URL to support mobile API routing
+01a0ac9 HEAD@{13}: commit: Add OTP UI components for register and forgot password flows
+0a6bcc9 HEAD@{14}: commit: Replaced website logo and favicon
+f8ec25a HEAD@{15}: commit: Update counselling pages with new plans, FAQs, and cursor styles
+b83495b HEAD@{16}: commit: Update code and push to GitHub
+5b4bd09 HEAD@{17}: commit: Update: Contact number to 8947910355
+d04ba28 HEAD@{18}: commit: Fix: Correct contact number typo to 7014264008
+5b4a294 HEAD@{19}: commit: Update: Contact number to 701264008
+78718bd HEAD@{20}: commit: Refactor: Rebranding and Footer Cleanup
+394caeb HEAD@{21}: commit: Refactor: Rebranding and Footer Cleanup
+4c795bd HEAD@{22}: commit: Fix: Move assets to public folder for production
+23ce605 HEAD@{23}: commit: Update: Mobile menu fix, Logo replacement, Search styling
+57452a2 HEAD@{24}: commit (merge): Merge branch 'main' of https://github.com/Lavish-Root/counseling_web
+f67b68f HEAD@{25}: commit (initial): Initial commit of Sartha Clone
