@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import NotificationModal from '../components/NotificationModal';
@@ -7,9 +7,19 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [notification, setNotification] = useState({ isOpen: false, type: '', message: '' });
+    const emailRef = useRef(null);
     const navigate = useNavigate();
 
     const closeNotification = () => setNotification({ ...notification, isOpen: false });
+
+    const handleRetry = () => {
+        closeNotification();
+        setEmail('');
+        setPassword('');
+        setTimeout(() => {
+            if (emailRef.current) emailRef.current.focus();
+        }, 100);
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -29,7 +39,7 @@ const Login = () => {
                 setNotification({ isOpen: true, type: 'success', message: 'Your verification is completed.' });
                 setTimeout(() => navigate('/'), 1500);
             } else {
-                setNotification({ isOpen: true, type: 'error', message: data.message || 'Login failed' });
+                setNotification({ isOpen: true, type: 'error', message: 'Invalid details' });
             }
         } catch (err) {
             console.error(err);
@@ -77,7 +87,7 @@ const Login = () => {
                 type={notification.type}
                 message={notification.message}
                 onClose={closeNotification}
-                onRetry={notification.type === 'error' ? closeNotification : undefined}
+                onRetry={notification.type === 'error' ? handleRetry : undefined}
             />
             <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
@@ -103,6 +113,7 @@ const Login = () => {
                                 id="email"
                                 name="email"
                                 type="email"
+                                ref={emailRef}
                                 autoComplete="email"
                                 required
                                 className="appearance-none relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-purple focus:border-transparent transition-all sm:text-sm"

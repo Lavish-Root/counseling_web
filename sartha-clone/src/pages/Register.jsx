@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import NotificationModal from '../components/NotificationModal';
@@ -11,9 +11,22 @@ const Register = () => {
     const [otp, setOtp] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [notification, setNotification] = useState({ isOpen: false, type: '', message: '' });
+    const emailRef = useRef(null);
     const navigate = useNavigate();
 
     const closeNotification = () => setNotification({ ...notification, isOpen: false });
+
+    const handleRetry = () => {
+        closeNotification();
+        setStep(1);
+        setName('');
+        setEmail('');
+        setPassword('');
+        setOtp('');
+        setTimeout(() => {
+            if (emailRef.current) emailRef.current.focus();
+        }, 100);
+    };
 
     const handleSendOtp = async (e) => {
         e.preventDefault();
@@ -33,7 +46,7 @@ const Register = () => {
                     setStep(2);
                 }, 1500);
             } else {
-                setNotification({ isOpen: true, type: 'error', message: data.message || 'Failed to send OTP' });
+                setNotification({ isOpen: true, type: 'error', message: 'Invalid details' });
             }
         } catch (err) {
             console.error(err);
@@ -57,7 +70,7 @@ const Register = () => {
             const verifyData = await verifyRes.json();
 
             if (!verifyRes.ok) {
-                setNotification({ isOpen: true, type: 'error', message: verifyData.message || 'OTP Verification failed' });
+                setNotification({ isOpen: true, type: 'error', message: 'Invalid details' });
                 setIsLoading(false);
                 return;
             }
@@ -74,7 +87,7 @@ const Register = () => {
                 setNotification({ isOpen: true, type: 'success', message: 'Your verification is completed. Registration successful!' });
                 setTimeout(() => navigate('/login'), 1500);
             } else {
-                setNotification({ isOpen: true, type: 'error', message: registerData.message || 'Registration failed' });
+                setNotification({ isOpen: true, type: 'error', message: 'Invalid details' });
             }
         } catch (err) {
             console.error(err);
@@ -125,7 +138,7 @@ const Register = () => {
                 type={notification.type}
                 message={notification.message}
                 onClose={closeNotification}
-                onRetry={notification.type === 'error' ? closeNotification : undefined}
+                onRetry={notification.type === 'error' ? handleRetry : undefined}
             />
             <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
@@ -164,6 +177,7 @@ const Register = () => {
                                         id="email"
                                         name="email"
                                         type="email"
+                                        ref={emailRef}
                                         autoComplete="email"
                                         required
                                         className="appearance-none relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-purple focus:border-transparent transition-all sm:text-sm"
