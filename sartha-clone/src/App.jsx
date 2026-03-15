@@ -4,6 +4,7 @@ import AppRoutes from './routes/AppRoutes';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import PageLoader from './components/PageLoader';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <Router>
+      <PageLoader />
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
