@@ -10,7 +10,7 @@ const PageLoader = () => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, [location.pathname]);
@@ -23,8 +23,8 @@ const PageLoader = () => {
         <FaGraduationCap className="text-6xl md:text-8xl text-[#11316B] animate-pulse drop-shadow-lg" />
         <div className="mt-4 flex space-x-3">
           <div className="w-4 h-4 bg-[#11316B] rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-          <div className="w-4 h-4 bg-[#11316B] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-          <div className="w-4 h-4 bg-[#11316B] rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+          <div className="w-4 h-4 bg-[#11316B] rounded-full animate-bounce" style={{ animationDelay: '0.15s' }}></div>
+          <div className="w-4 h-4 bg-[#11316B] rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
         </div>
       </div>
     </div>
