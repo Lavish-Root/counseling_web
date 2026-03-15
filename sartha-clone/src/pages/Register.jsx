@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
+import NotificationModal from '../components/NotificationModal';
 
 const Register = () => {
     const [step, setStep] = useState(1);
@@ -9,7 +10,10 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [otp, setOtp] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [notification, setNotification] = useState({ isOpen: false, type: '', message: '' });
     const navigate = useNavigate();
+
+    const closeNotification = () => setNotification({ ...notification, isOpen: false });
 
     const handleSendOtp = async (e) => {
         e.preventDefault();
@@ -23,14 +27,17 @@ const Register = () => {
             });
             const data = await res.json();
             if (res.ok) {
-                alert('OTP sent to your email!');
-                setStep(2);
+                setNotification({ isOpen: true, type: 'success', message: 'OTP sent to your email! Please check your inbox.' });
+                setTimeout(() => {
+                    closeNotification();
+                    setStep(2);
+                }, 1500);
             } else {
-                alert(data.message || 'Failed to send OTP');
+                setNotification({ isOpen: true, type: 'error', message: data.message || 'Failed to send OTP' });
             }
         } catch (err) {
             console.error(err);
-            alert('Error: ' + (err.message || 'Something went wrong, please try again.'));
+            setNotification({ isOpen: true, type: 'error', message: 'Error: ' + (err.message || 'Something went wrong, please try again.') });
         } finally {
             setIsLoading(false);
         }
@@ -50,7 +57,7 @@ const Register = () => {
             const verifyData = await verifyRes.json();
 
             if (!verifyRes.ok) {
-                alert(verifyData.message || 'OTP Verification failed');
+                setNotification({ isOpen: true, type: 'error', message: verifyData.message || 'OTP Verification failed' });
                 setIsLoading(false);
                 return;
             }
@@ -64,14 +71,14 @@ const Register = () => {
             const registerData = await registerRes.json();
 
             if (registerRes.ok) {
-                alert('Registration successful! Please log in.');
-                navigate('/login');
+                setNotification({ isOpen: true, type: 'success', message: 'Your verification is completed. Registration successful!' });
+                setTimeout(() => navigate('/login'), 1500);
             } else {
-                alert(registerData.message || 'Registration failed');
+                setNotification({ isOpen: true, type: 'error', message: registerData.message || 'Registration failed' });
             }
         } catch (err) {
             console.error(err);
-            alert('Error: ' + (err.message || 'Something went wrong, please try again.'));
+            setNotification({ isOpen: true, type: 'error', message: 'Error: ' + (err.message || 'Something went wrong, please try again.') });
         } finally {
             setIsLoading(false);
         }
@@ -94,25 +101,32 @@ const Register = () => {
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 console.log('Google login successful');
-                alert('Logged in successfully with Google!');
-                navigate('/');
+                setNotification({ isOpen: true, type: 'success', message: 'Your verification is completed.' });
+                setTimeout(() => navigate('/'), 1500);
             } else {
-                alert(data.message || 'Google Login failed');
+                setNotification({ isOpen: true, type: 'error', message: data.message || 'Google Login failed' });
             }
         } catch (err) {
             console.error('Google login error:', err);
-            alert('Something went wrong with Google Login, please try again.');
+            setNotification({ isOpen: true, type: 'error', message: 'Something went wrong with Google Login, please try again.' });
         }
     };
 
     const handleGoogleError = () => {
         console.error('Google Server Error');
-        alert('Google Login Failed. Please try again.');
+        setNotification({ isOpen: true, type: 'error', message: 'Google Login Failed. Please try again.' });
     };
 
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
+            <NotificationModal
+                isOpen={notification.isOpen}
+                type={notification.type}
+                message={notification.message}
+                onClose={closeNotification}
+                onRetry={notification.type === 'error' ? closeNotification : undefined}
+            />
             <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
                     <Link to="/">

@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
+import NotificationModal from '../components/NotificationModal';
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [notification, setNotification] = useState({ isOpen: false, type: '', message: '' });
     const navigate = useNavigate();
+
+    const closeNotification = () => setNotification({ ...notification, isOpen: false });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,14 +26,14 @@ const Login = () => {
             if (res.ok) {
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
-                alert('Logged in successfully!');
-                navigate('/');
+                setNotification({ isOpen: true, type: 'success', message: 'Your verification is completed.' });
+                setTimeout(() => navigate('/'), 1500);
             } else {
-                alert(data.message || 'Login failed');
+                setNotification({ isOpen: true, type: 'error', message: data.message || 'Login failed' });
             }
         } catch (err) {
             console.error(err);
-            alert('Something went wrong, please try again.');
+            setNotification({ isOpen: true, type: 'error', message: 'Something went wrong, please try again.' });
         }
     };
 
@@ -50,24 +54,31 @@ const Login = () => {
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 console.log('Google login successful');
-                alert('Logged in successfully with Google!');
-                navigate('/');
+                setNotification({ isOpen: true, type: 'success', message: 'Your verification is completed.' });
+                setTimeout(() => navigate('/'), 1500);
             } else {
-                alert(data.message || 'Google Login failed');
+                setNotification({ isOpen: true, type: 'error', message: data.message || 'Google Login failed' });
             }
         } catch (err) {
             console.error('Google login error:', err);
-            alert('Something went wrong with Google Login, please try again.');
+            setNotification({ isOpen: true, type: 'error', message: 'Something went wrong with Google Login, please try again.' });
         }
     };
 
     const handleGoogleError = () => {
         console.error('Google Login Failed');
-        alert('Google Login Failed. Please try again.');
+        setNotification({ isOpen: true, type: 'error', message: 'Google Login Failed. Please try again.' });
     };
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
+            <NotificationModal
+                isOpen={notification.isOpen}
+                type={notification.type}
+                message={notification.message}
+                onClose={closeNotification}
+                onRetry={notification.type === 'error' ? closeNotification : undefined}
+            />
             <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
                     <Link to="/">
