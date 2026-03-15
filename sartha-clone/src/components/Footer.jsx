@@ -26,28 +26,31 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Quick Links */}
-                <div>
-                    <h4 className="font-bold text-lg mb-6">Quick Links</h4>
-                    <ul className="space-y-3 text-sm text-gray-400">
-                        <li><a href="https://mcc.nic.in/" target="_blank" rel="noreferrer" className="hover:text-primary-pink transition">MCC Counselling</a></li>
-                        <li><a href="https://www.upsc.gov.in/" target="_blank" rel="noreferrer" className="hover:text-primary-pink transition">UPSC Official</a></li>
-                        <li><a href="https://ssc.nic.in/" target="_blank" rel="noreferrer" className="hover:text-primary-pink transition">SSC Official</a></li>
-                        <li><Link to="/terms" className="hover:text-primary-pink transition">Terms & Conditions</Link></li>
-                        <li><Link to="/privacy" className="hover:text-primary-pink transition">Privacy Policy</Link></li>
-                        <li><Link to="/refund" className="hover:text-primary-pink transition">Refund Policy</Link></li>
-                    </ul>
-                </div>
+                {/* Links and Services Group */}
+                <div className="grid grid-cols-2 gap-4 md:col-span-2 md:gap-8">
+                    {/* Quick Links */}
+                    <div>
+                        <h4 className="font-bold text-lg mb-6">Quick Links</h4>
+                        <ul className="space-y-3 text-sm text-gray-400">
+                            <li><a href="https://mcc.nic.in/" target="_blank" rel="noreferrer" className="hover:text-primary-pink transition">MCC Counselling</a></li>
+                            <li><a href="https://www.upsc.gov.in/" target="_blank" rel="noreferrer" className="hover:text-primary-pink transition">UPSC Official</a></li>
+                            <li><a href="https://ssc.nic.in/" target="_blank" rel="noreferrer" className="hover:text-primary-pink transition">SSC Official</a></li>
+                            <li><Link to="/terms" className="hover:text-primary-pink transition">Terms & Conditions</Link></li>
+                            <li><Link to="/privacy" className="hover:text-primary-pink transition">Privacy Policy</Link></li>
+                            <li><Link to="/refund" className="hover:text-primary-pink transition">Refund Policy</Link></li>
+                        </ul>
+                    </div>
 
-                {/* Services */}
-                <div>
-                    <h4 className="font-bold text-lg mb-6">Our Services</h4>
-                    <ul className="space-y-3 text-sm text-gray-400">
-                        <li><Link to="/counselling/mbbs" className="hover:text-primary-pink transition">NEET UG Counselling</Link></li>
-                        <li><Link to="/courses" className="hover:text-primary-pink transition">Competitive Exams</Link></li>
-                        <li><Link to="/counselling" className="hover:text-primary-pink transition">Paid Counselling</Link></li>
-                        <li><Link to="/ebooks" className="hover:text-primary-pink transition">Updates & Resources</Link></li>
-                    </ul>
+                    {/* Services */}
+                    <div>
+                        <h4 className="font-bold text-lg mb-6">Our Services</h4>
+                        <ul className="space-y-3 text-sm text-gray-400">
+                            <li><Link to="/counselling/mbbs" className="hover:text-primary-pink transition">NEET UG Counselling</Link></li>
+                            <li><Link to="/courses" className="hover:text-primary-pink transition">Competitive Exams</Link></li>
+                            <li><Link to="/counselling" className="hover:text-primary-pink transition">Paid Counselling</Link></li>
+                            <li><Link to="/ebooks" className="hover:text-primary-pink transition">Updates & Resources</Link></li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Contact */}
