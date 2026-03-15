@@ -11,7 +11,7 @@ const NotificationSlider = () => {
     ];
 
     return (
-        <div className="bg-gradient-primary text-white text-xs md:text-sm py-2 relative z-50">
+        <div className="bg-gradient-primary text-white text-xs md:text-sm py-2 relative z-40">
             <div className="container mx-auto px-4 flex items-center justify-between">
                 <span className="font-bold bg-white/20 px-2 py-0.5 rounded text-[10px] mr-4 hidden md:inline-block">NEW</span>
                 <Swiper
