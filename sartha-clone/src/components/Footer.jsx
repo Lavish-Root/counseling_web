@@ -1,11 +1,34 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaYoutube, FaWhatsapp, FaEnvelope, FaTelegramPlane, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaYoutube, FaWhatsapp, FaEnvelope, FaTelegramPlane, FaInstagram, FaArrowUp } from 'react-icons/fa';
 
 import logo from '../assets/nextstep_logo.jpg';
 
 const Footer = () => {
+    const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Check if user has scrolled down 10% of the page
+            const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+            if (window.scrollY > scrollTotal * 0.1) {
+                setShowScrollToTop(true);
+            } else {
+                setShowScrollToTop(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <footer className="bg-dark-bg text-white pt-16 pb-8 border-t border-gray-800">
             <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8 mb-12">
@@ -73,10 +96,24 @@ const Footer = () => {
                 <p>&copy; {new Date().getFullYear()} NextStep Counsel. All rights reserved.</p>
             </div>
 
-            {/* Floating WhatsApp Button */}
-            <a href="https://wa.me/919588928940" target="_blank" rel="noreferrer" className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition z-50">
-                <FaWhatsapp size={24} />
-            </a>
+            {/* Floating Buttons Container */}
+            <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+                {/* Scroll To Top Button */}
+                {showScrollToTop && (
+                    <button 
+                        onClick={scrollToTop}
+                        className="bg-primary-pink text-white p-4 rounded-full shadow-lg hover:scale-110 transition animate-fade-in-up flex justify-center items-center"
+                        aria-label="Scroll to top"
+                    >
+                        <FaArrowUp size={20} />
+                    </button>
+                )}
+                
+                {/* Floating WhatsApp Button */}
+                <a href="https://wa.me/919588928940" target="_blank" rel="noreferrer" className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition flex justify-center items-center">
+                    <FaWhatsapp size={24} />
+                </a>
+            </div>
         </footer>
     );
 };
