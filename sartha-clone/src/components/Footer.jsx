@@ -110,7 +110,7 @@ const Footer = () => {
                         className="bg-primary-pink text-white p-4 rounded-full shadow-lg hover:scale-110 transition animate-fade-in-up flex justify-center items-center"
                         aria-label="Scroll to top"
                     >
-                        <FaArrowUp size={20} />
+                        <FaArrowUp size={20} className="text-gray-700" />
                     </button>
                 )}
             </div>
