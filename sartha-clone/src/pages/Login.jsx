@@ -97,7 +97,7 @@ const Login = () => {
                             alt="NextStep Counsel"
                             className="h-12 object-contain mb-8"
                         /> */}
-                        <span className="text-3xl font-bold text-gray-900 mb-8 block">NextStep Counsel</span>
+                        <span className="text-3xl font-bold text-gray-900 mb-2 block">NextStep Counsel</span>
                     </Link>
                     <h2 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h2>
                     <p className="text-gray-500 text-sm">Please enter your details to sign in</p>
