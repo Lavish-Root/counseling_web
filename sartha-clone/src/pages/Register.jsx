@@ -132,7 +132,7 @@ const Register = () => {
 
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
+        <div className="min-h-[100dvh] flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8 py-4 font-sans">
             <NotificationModal
                 isOpen={notification.isOpen}
                 type={notification.type}
@@ -140,7 +140,7 @@ const Register = () => {
                 onClose={closeNotification}
                 onRetry={notification.type === 'error' ? handleRetry : undefined}
             />
-            <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
+            <div className="max-w-md w-full space-y-6 sm:space-y-8 bg-white p-6 sm:p-10 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
                     <Link to="/">
                         <span className="text-3xl font-bold text-gray-900 mb-2 block">NextStep Counsel</span>
@@ -149,8 +149,8 @@ const Register = () => {
                     {step === 2 && <p className="text-gray-500 text-sm text-center">We've sent a 6-digit code to {email}</p>}
                 </div>
 
-                <form className="mt-8 space-y-6" onSubmit={step === 1 ? handleSendOtp : handleVerifyAndRegister}>
-                    <div className="space-y-5">
+                <form className="mt-6 sm:mt-8 space-y-6" onSubmit={step === 1 ? handleSendOtp : handleVerifyAndRegister}>
+                    <div className="space-y-4">
                         {step === 1 && (
                             <>
                                 <div>

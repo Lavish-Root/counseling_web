@@ -81,7 +81,7 @@ const Login = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
+        <div className="min-h-[100dvh] flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8 py-4 font-sans">
             <NotificationModal
                 isOpen={notification.isOpen}
                 type={notification.type}
@@ -89,13 +89,12 @@ const Login = () => {
                 onClose={closeNotification}
                 onRetry={notification.type === 'error' ? handleRetry : undefined}
             />
-            <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
+            <div className="max-w-md w-full space-y-6 sm:space-y-8 bg-white p-6 sm:p-10 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
                     <Link to="/">
                         {/* <img
                             src="/assets/sartha-logo-square.png"
                             alt="NextStep Counsel"
-                            className="h-12 object-contain mb-8"
                         /> */}
                         <span className="text-3xl font-bold text-gray-900 mb-2 block">NextStep Counsel</span>
                     </Link>
@@ -103,8 +102,8 @@ const Login = () => {
                     <p className="text-gray-500 text-sm">Please enter your details to sign in</p>
                 </div>
 
-                <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-                    <div className="space-y-5">
+                <form className="mt-6 sm:mt-8 space-y-6" onSubmit={handleSubmit}>
+                    <div className="space-y-4">
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                                 Email address
