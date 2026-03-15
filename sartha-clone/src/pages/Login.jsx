@@ -89,7 +89,7 @@ const Login = () => {
                 onClose={closeNotification}
                 onRetry={notification.type === 'error' ? handleRetry : undefined}
             />
-            <div className="max-w-md w-full space-y-6 sm:space-y-8 bg-white p-6 sm:p-10 rounded-2xl shadow-xl">
+            <div className="max-w-md w-full space-y-6 sm:space-y-8 bg-white px-6 pb-6 pt-4 sm:px-10 sm:pb-10 sm:pt-8 rounded-2xl shadow-xl">
                 <div className="flex flex-col items-center">
                     <Link to="/">
                         {/* <img

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowRight, FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import SearchModal from './SearchModal';
@@ -10,6 +10,7 @@ const Navbar = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     const navLinks = [
+        { name: 'Home', path: '/' },
         { name: 'Blog', path: '/blogs' },
         { name: 'Courses', path: '/courses' },
         { name: 'Preference List', path: '/neet-pg-preference-list' },
@@ -21,6 +22,7 @@ const Navbar = () => {
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
     const [user, setUser] = useState(null);
 
     // Close menu when route changes and check user
@@ -42,6 +44,7 @@ const Navbar = () => {
         localStorage.removeItem('user');
         localStorage.removeItem('token');
         setUser(null);
+        navigate('/login');
     };
 
 
