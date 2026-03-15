@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowRight, FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import SearchModal from './SearchModal';
@@ -60,13 +60,19 @@ const Navbar = () => {
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-6">
                         {navLinks.map((link) => (
-                            <Link
+                            <NavLink
                                 key={link.name}
                                 to={link.path}
-                                className="text-gray-700 hover:text-primary-pink font-medium transition-colors text-sm"
+                                className={({ isActive }) =>
+                                    `transition-colors text-sm ${
+                                        isActive
+                                            ? 'text-primary-pink font-bold'
+                                            : 'text-gray-700 font-medium hover:text-primary-pink'
+                                    }`
+                                }
                             >
                                 {link.name}
-                            </Link>
+                            </NavLink>
                         ))}
                     </div>
 
@@ -121,13 +127,19 @@ const Navbar = () => {
                         >
                             <div className="flex flex-col p-4 space-y-4">
                                 {navLinks.map((link) => (
-                                    <Link
+                                    <NavLink
                                         key={link.name}
                                         to={link.path}
-                                        className="text-gray-700 hover:text-primary-pink font-medium text-lg border-b border-gray-50 pb-2"
+                                        className={({ isActive }) =>
+                                            `text-lg border-b border-gray-50 pb-2 ${
+                                                isActive
+                                                    ? 'text-primary-pink font-bold'
+                                                    : 'text-gray-700 font-medium hover:text-primary-pink'
+                                            }`
+                                        }
                                     >
                                         {link.name}
-                                    </Link>
+                                    </NavLink>
                                 ))}
                                 {user ? (
                                     <div className="flex flex-col items-center justify-center space-y-3 mt-4 w-full">
