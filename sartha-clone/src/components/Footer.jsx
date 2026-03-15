@@ -98,6 +98,11 @@ const Footer = () => {
 
             {/* Floating Buttons Container */}
             <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+                {/* Floating WhatsApp Button */}
+                <a href="https://wa.me/919588928940" target="_blank" rel="noreferrer" className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition flex justify-center items-center">
+                    <FaWhatsapp size={24} />
+                </a>
+
                 {/* Scroll To Top Button */}
                 {showScrollToTop && (
                     <button 
@@ -108,11 +113,6 @@ const Footer = () => {
                         <FaArrowUp size={20} />
                     </button>
                 )}
-                
-                {/* Floating WhatsApp Button */}
-                <a href="https://wa.me/919588928940" target="_blank" rel="noreferrer" className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition flex justify-center items-center">
-                    <FaWhatsapp size={24} />
-                </a>
             </div>
         </footer>
     );
