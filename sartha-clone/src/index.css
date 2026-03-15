@@ -12,6 +12,11 @@ body {
   font-family: var(--font-sans);
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#E15583] to-[#8361D0];
