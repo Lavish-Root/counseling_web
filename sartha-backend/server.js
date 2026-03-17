@@ -8,8 +8,32 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
-app.use(cors());
+
+const allowedOrigins = [
+    'https://nextstepcareercounseling.com',
+    'https://www.nextstepcareercounseling.com'
+];
+
+const corsOptions = {
+    origin(origin, cb) {
+        if (!origin) return cb(null, true);
+        if (allowedOrigins.includes(origin)) return cb(null, true);
+        return cb(new Error('Not allowed by CORS'));
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'x-auth-token'],
+    optionsSuccessStatus: 204,
+    preflightContinue: false,
+};
+
+app.set('trust proxy', 1);
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
+app.use((req, res, next) => {
+    res.header('Vary', 'Origin');
+    next();
+});
 app.use(express.json());
 
 // Routes
@@ -18,6 +42,8 @@ app.use('/api/auth', authRoutes);
 
 const adminRoutes = require('./routes/admin');
 app.use('/api/admin', adminRoutes);
+
+app.options('/api/auth/google', cors(corsOptions));
 
 // Database connection
 const PORT = process.env.PORT || 5000;

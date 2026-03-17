@@ -5,7 +5,8 @@ const jwt = require('jsonwebtoken');
 const { OAuth2Client } = require('google-auth-library');
 const User = require('../models/User');
 const sendEmail = require('../utils/email');
-const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '979543545120-8bguhfui2dcjke50cdl3mc0q2d39a257.apps.googleusercontent.com';
+const client = new OAuth2Client(GOOGLE_CLIENT_ID);
 
 // Generate 6 digit OTP
 const generateOTP = () => {
@@ -290,16 +291,27 @@ router.post('/reset-password', async (req, res) => {
 // @access  Public
 router.post('/google', async (req, res) => {
     try {
-        const { token } = req.body;
+        const bearer = req.headers.authorization && req.headers.authorization.startsWith('Bearer ')
+            ? req.headers.authorization.split(' ')[1]
+            : null;
+        const token =
+            req.body?.token ||
+            req.body?.credential ||
+            req.body?.id_token ||
+            bearer;
 
         if (!token) {
             return res.status(400).json({ message: 'No Google token provided' });
         }
 
+        if (!process.env.GOOGLE_CLIENT_ID) {
+            return res.status(500).json({ message: 'Google client not configured' });
+        }
+
         // Verify token with Google
         const ticket = await client.verifyIdToken({
             idToken: token,
-            audience: process.env.GOOGLE_CLIENT_ID,
+            audience: GOOGLE_CLIENT_ID,
         });
 
         const payload = ticket.getPayload();
@@ -352,7 +364,10 @@ router.post('/google', async (req, res) => {
         );
 
     } catch (err) {
-        console.error('Google Auth Error:', err);
+        console.error('Google Auth Error:', err?.message || err);
+        if (err?.message?.toLowerCase().includes('invalid') || err?.message?.toLowerCase().includes('audience')) {
+            return res.status(401).json({ message: 'Invalid Google token or wrong client_id' });
+        }
         res.status(500).json({ message: 'Server error during Google authentication' });
     }
 });
